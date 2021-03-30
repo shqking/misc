@@ -10,26 +10,26 @@
 
 int dump_disasm(void* start, size_t size)
 {
-	csh handle;
-	cs_insn *insn;
-	size_t count;
+  csh handle;
+  cs_insn *insn;
+  size_t count;
 
-	if (cs_open(CS_ARCH_ARM64, CS_MODE_ARM, &handle) != CS_ERR_OK)
-		return -1;
+  if (cs_open(CS_ARCH_ARM64, CS_MODE_ARM, &handle) != CS_ERR_OK)
+    return -1;
 
-	count = cs_disasm(handle, start, size, (uintptr_t)start, 0, &insn);
-	if (count > 0) {
-		size_t j;
-		for (j = 0; j < count; j++) {
-			printf("0x%"PRIx64":\t%s\t\t%s\n", insn[j].address, insn[j].mnemonic,
-					insn[j].op_str);
-		}
+  count = cs_disasm(handle, start, size, (uintptr_t)start, 0, &insn);
+  if (count > 0) {
+    size_t j;
+    for (j = 0; j < count; j++) {
+      printf("0x%"PRIx64":\t%s\t\t%s\n", insn[j].address, insn[j].mnemonic,
+        insn[j].op_str);
+    }
 
-		cs_free(insn, count);
-	} else
-		printf("ERROR: Failed to disassemble given code!\n");
+    cs_free(insn, count);
+  } else
+    printf("ERROR: Failed to disassemble given code!\n");
 
-	cs_close(&handle);
+  cs_close(&handle);
   return 1;
 }
 
