@@ -1,4 +1,4 @@
-# commits: https://github.com/php/php-src/commit/24c6f80
+# commits: https://github.com/php/php-src/commit/24c6f80  (Add the missing parts for macros ZVAL_COPY_CONST and ZVAL_COPY_CONST_2)
 
 test command: 
 ```
@@ -6,7 +6,10 @@ make test TESTS="-d ocache.enable=1 -d opcache.enable_cli=1 -d opcache.jit_buffe
 ```
 
 ## HYBRID VM + PROFITABILITY_CHECKS enable
-### opcache.jit: 1205, 1215, 1225 and 1235
+
+build command: `./configure --enable-debug; make -j 100`
+
+### opcache.jit: 1205, 1215, 1225, 1235. AND 1213, 1223, 1233. AND 1214, 1224, 1234
 
 failed test cases: 4
 ```
@@ -19,7 +22,7 @@ They failed because of the missing tracing JIT.
 
 ### opcache.jit:1203
 
-another 3 test cases failed. **These 3 test cases would pass on x86.**
+another 3 test cases failed. **These 3 test cases also failed on x86.**
 ```
 Test typed properties return by ref is allowed [Zend/tests/type_declarations/typed_properties_032.phpt]  --------------------1
 Test typed properties yield reference guard [Zend/tests/type_declarations/typed_properties_033.phpt]     --------------------2
@@ -59,6 +62,14 @@ JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.php
 ```
 
 error msg: segment fault.
+
+
+## CALL VM + PROFITABILITY_CHECKS enable
+CALL VM is built with `disable-gcc-global-regs`.
+
+build command: `./configure --enable-debug --disable-gcc-global-regs; make -j 100`
+
+### opcache.jit: 1205
 
 
 
