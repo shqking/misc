@@ -1,5 +1,10 @@
 # commits: https://github.com/php/php-src/commit/24c6f80
 
+test command: 
+```
+make test TESTS="-d ocache.enable=1 -d opcache.enable_cli=1 -d opcache.file_update_protection=0 -d opcache.jit_buffer_size=1M -d opcache.jit=1205 Zend/tests/ tests/ ext/opcache/tests/jit/"
+```
+
 ## HYBRID VM + PROFITABILITY_CHECKS enable
 ### opcache.jit: 1205, 1215, 1225 and 1235
 
