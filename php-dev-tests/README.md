@@ -109,4 +109,27 @@ JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.php
 
 
 ## 3 ZTS + HYBRID + PROFITABILITY_CHECKS enable
+build command: `./configure --enable-debug --enable-zts`
 
+### 3.1 opcache.jit:1205
+
+same with the results of seciton 1.1 and 2.1
+
+### 3.2 opcache.jit:1203
+same with the results of section 1.2 and 2.2
+
+### 3.3 opcache.jit:1204
+```
+ZE2 A protected method can only be called inside the class [tests/classes/protected_001.phpt]   --------------------6
+Testing callback formats within class method [Zend/tests/bug45180.phpt]                    ------------------------4. Failed in x96 as well.
+Bug #54268 (Double free when destroy_zend_class fails) [Zend/tests/bug54268.phpt]          --------------------5
+Test typed properties return by ref is allowed [Zend/tests/type_declarations/typed_properties_032.phpt]
+Test typed properties yield reference guard [Zend/tests/type_declarations/typed_properties_033.phpt]
+Typed property on overloaded by-ref property [Zend/tests/type_declarations/typed_properties_061.phpt]
+Bug #80802: zend_jit_fetch_indirect_var assert failure with tracing JIT [ext/opcache/tests/jit/bug80802.phpt]
+Bug #80839: PHP problem with JIT [ext/opcache/tests/jit/bug80861.phpt]
+JIT Trampoline 001: trampoline cleanup [ext/opcache/tests/jit/trampoline_001.phpt]
+JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.phpt]
+```
+
+A new bug occurs, i.e. No.6. Segment fault.
