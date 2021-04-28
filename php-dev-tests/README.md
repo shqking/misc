@@ -5,11 +5,11 @@ test command:
 make test TESTS="-d ocache.enable=1 -d opcache.enable_cli=1 -d opcache.jit_buffer_size=1M -d opcache.jit=1205 Zend/tests/ tests/ ext/opcache/tests/jit/"
 ```
 
-## HYBRID VM + PROFITABILITY_CHECKS enable
+## 1 HYBRID VM + PROFITABILITY_CHECKS enable
 
 build command: `./configure --enable-debug; make -j 100`
 
-### opcache.jit: 1205, 1215, 1225, 1235. AND 1213, 1223, 1233. AND 1214, 1224, 1234
+### 1.1 opcache.jit: 1205, 1215, 1225, 1235. AND 1213, 1223, 1233. AND 1214, 1224, 1234
 
 failed test cases: 4
 ```
@@ -20,7 +20,7 @@ JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.php
 ```
 They failed because of the missing tracing JIT.
 
-### opcache.jit:1203
+### 1.2 opcache.jit:1203
 
 another 3 test cases failed. **These 3 test cases also failed on x86.**
 ```
@@ -46,7 +46,7 @@ Termsig=6
 ---- FAILED
 ```
 
-### opcache.jit:1204
+### 1.3 opcache.jit:1204
 
 another 2 test cases failed. **Note that bug No.4 also failed on x86.**
 ```
@@ -64,12 +64,12 @@ JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.php
 error msg: segment fault.
 
 
-## CALL VM + PROFITABILITY_CHECKS enable
+## 2 CALL VM + PROFITABILITY_CHECKS enable
 CALL VM is built with `disable-gcc-global-regs`.
 
 build command: `./configure --enable-debug --disable-gcc-global-regs; make -j 100`
 
-### opcache.jit: 1205, 1235
+### 2.1 opcache.jit: 1205, 1235
 
 failed 4 test cases.
 ```
@@ -79,7 +79,7 @@ JIT Trampoline 001: trampoline cleanup [ext/opcache/tests/jit/trampoline_001.php
 JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.phpt]
 ```
 
-### opcache.jit: 1203
+### 2.2 opcache.jit: 1203
 
 Similar to HYBRID mode. another 3 test cases failed. **These 3 test cases also failed on x86.**
 ```
@@ -92,7 +92,7 @@ JIT Trampoline 001: trampoline cleanup [ext/opcache/tests/jit/trampoline_001.php
 JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.phpt]
 ```
 
-### opcache.jit: 1204
+### 2.3 opcache.jit: 1204
 
 Similar to HYBRID mode.
 ```
@@ -108,5 +108,5 @@ JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.php
 ```
 
 
-## ZTS + HYBRID + PROFITABILITY_CHECKS enable
+## 3 ZTS + HYBRID + PROFITABILITY_CHECKS enable
 
