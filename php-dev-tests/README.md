@@ -81,15 +81,32 @@ JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.php
 
 ### opcache.jit: 1203
 
-another 3 test cases failed. **These 3 test cases also failed on x86.**
+Similar to HYBRID mode. another 3 test cases failed. **These 3 test cases also failed on x86.**
 ```
-Test typed properties return by ref is allowed [Zend/tests/type_declarations/typed_properties_032.phpt]  --------------------1
-Test typed properties yield reference guard [Zend/tests/type_declarations/typed_properties_033.phpt]     --------------------2
-Typed property on overloaded by-ref property [Zend/tests/type_declarations/typed_properties_061.phpt]    --------------------3
+Test typed properties return by ref is allowed [Zend/tests/type_declarations/typed_properties_032.phpt]  
+Test typed properties yield reference guard [Zend/tests/type_declarations/typed_properties_033.phpt]     
+Typed property on overloaded by-ref property [Zend/tests/type_declarations/typed_properties_061.phpt]    
 Bug #80802: zend_jit_fetch_indirect_var assert failure with tracing JIT [ext/opcache/tests/jit/bug80802.phpt]
 Bug #80839: PHP problem with JIT [ext/opcache/tests/jit/bug80861.phpt]
 JIT Trampoline 001: trampoline cleanup [ext/opcache/tests/jit/trampoline_001.phpt]
 JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.phpt]
+```
 
 ### opcache.jit: 1204
+
+Similar to HYBRID mode.
+```
+Testing callback formats within class method [Zend/tests/bug45180.phpt]
+Bug #54268 (Double free when destroy_zend_class fails) [Zend/tests/bug54268.phpt]-----------------------------5
+Test typed properties return by ref is allowed [Zend/tests/type_declarations/typed_properties_032.phpt]
+Test typed properties yield reference guard [Zend/tests/type_declarations/typed_properties_033.phpt]
+Typed property on overloaded by-ref property [Zend/tests/type_declarations/typed_properties_061.phpt]
+Bug #80802: zend_jit_fetch_indirect_var assert failure with tracing JIT [ext/opcache/tests/jit/bug80802.phpt]
+Bug #80839: PHP problem with JIT [ext/opcache/tests/jit/bug80861.phpt]
+JIT Trampoline 001: trampoline cleanup [ext/opcache/tests/jit/trampoline_001.phpt]
+JIT Trampoline 002: trampoline cleanup [ext/opcache/tests/jit/trampoline_002.phpt]
+```
+
+
+## ZTS + HYBRID + PROFITABILITY_CHECKS enable
 
