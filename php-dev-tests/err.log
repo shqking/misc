@@ -1,0 +1,2622 @@
+JIT$/home/haosun01/php/php-src/ext/opcache/tests/jit/mod_001.php: ; (/home/haosun01/php/php-src/ext/opcache/tests/jit/mod_001.php)
+    ffff9dddea60:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddea64:	stp x27, x28, [sp, #0x20]
+    ffff9dddea68:	mov x27, x0
+    ffff9dddea6c:	movz x11, #0x5f80
+    ffff9dddea70:	movk x11, #0xcb21, lsl #16
+    ffff9dddea74:	movk x11, #0xaaaa, lsl #32
+    ffff9dddea78:	ldr x28, [x11]
+    ffff9dddea7c:	movz x11, #0x5f88
+    ffff9dddea80:	movk x11, #0xcb21, lsl #16
+    ffff9dddea84:	movk x11, #0xaaaa, lsl #32
+    ffff9dddea88:	ldr x10, [x11]
+    ffff9dddea8c:	sub x10, x10, x28
+    ffff9dddea90:	cmp x10, #0x60
+    ffff9dddea94:	b.lo #.L78
+    ffff9dddea98:	movz x11, #0x5f80
+    ffff9dddea9c:	movk x11, #0xcb21, lsl #16
+    ffff9dddeaa0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddeaa4:	ldr x10, [x11]
+    ffff9dddeaa8:	add x10, x10, #0x60
+    ffff9dddeaac:	str x10, [x11]
+    ffff9dddeab0:	movz w11, #0
+    ffff9dddeab4:	str w11, [x28, #0x28]
+.L1:
+    ffff9dddeab8:	movz x9, #0xf640
+    ffff9dddeabc:	movk x9, #0xef34, lsl #16
+    ffff9dddeac0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddeac4:	str x9, [x28, #0x18]
+    ffff9dddeac8:	str xzr, [x28, #0x20]
+    ffff9dddeacc:	movz w11, #0x1
+    ffff9dddead0:	str w11, [x28, #0x2c]
+    ffff9dddead4:	str xzr, [x28, #0x30]
+    ffff9dddead8:	str x28, [x27, #8]
+    ffff9dddeadc:	ldr x8, [x27, #0x40]
+    ffff9dddeae0:	ldr x8, [x8, #0x10]
+    ffff9dddeae4:	cbz x8, #.L79
+.L2:
+    ffff9dddeae8:	movz x11, #0x5f80
+    ffff9dddeaec:	movk x11, #0xcb21, lsl #16
+    ffff9dddeaf0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddeaf4:	ldr x28, [x11]
+    ffff9dddeaf8:	movz x11, #0x5f88
+    ffff9dddeafc:	movk x11, #0xcb21, lsl #16
+    ffff9dddeb00:	movk x11, #0xaaaa, lsl #32
+    ffff9dddeb04:	ldr x10, [x11]
+    ffff9dddeb08:	sub x10, x10, x28
+    ffff9dddeb0c:	cmp x10, #0x80
+    ffff9dddeb10:	b.lo #.L80
+    ffff9dddeb14:	movz x11, #0x5f80
+    ffff9dddeb18:	movk x11, #0xcb21, lsl #16
+    ffff9dddeb1c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddeb20:	ldr x10, [x11]
+    ffff9dddeb24:	add x10, x10, #0x80
+    ffff9dddeb28:	str x10, [x11]
+    ffff9dddeb2c:	movz w11, #0
+    ffff9dddeb30:	str w11, [x28, #0x28]
+    ffff9dddeb34:	str x8, [x28, #0x18]
+.L3:
+    ffff9dddeb38:	str xzr, [x28, #0x20]
+    ffff9dddeb3c:	movz w11, #0x2
+    ffff9dddeb40:	str w11, [x28, #0x2c]
+    ffff9dddeb44:	movz x8, #0x7d
+    ffff9dddeb48:	str x8, [x28, #0x50]
+    ffff9dddeb4c:	movz w8, #0x4
+    ffff9dddeb50:	str w8, [x28, #0x58]
+    ffff9dddeb54:	movz x8, #0x21
+    ffff9dddeb58:	str x8, [x28, #0x60]
+    ffff9dddeb5c:	movz w8, #0x4
+    ffff9dddeb60:	str w8, [x28, #0x68]
+    ffff9dddeb64:	movz x8, #0x9d0
+    ffff9dddeb68:	movk x8, #0x966b, lsl #16
+    ffff9dddeb6c:	movk x8, #0xffff, lsl #32
+    ffff9dddeb70:	str x8, [x27]
+    ffff9dddeb74:	str x27, [x28, #0x30]
+    ffff9dddeb78:	str xzr, [x28, #8]
+    ffff9dddeb7c:	add x10, x27, #0x60
+    ffff9dddeb80:	str x10, [x28, #0x10]
+    ffff9dddeb84:	ldr x8, [x28, #0x18]
+    ffff9dddeb88:	ldr x10, [x8, #0x50]
+    ffff9dddeb8c:	movz x11, #0x5d60
+    ffff9dddeb90:	movk x11, #0xcb21, lsl #16
+    ffff9dddeb94:	movk x11, #0xaaaa, lsl #32
+    ffff9dddeb98:	ldr x9, [x11]
+    ffff9dddeb9c:	add x10, x10, x9
+    ffff9dddeba0:	ldr x10, [x10]
+    ffff9dddeba4:	str x10, [x28, #0x40]
+    ffff9dddeba8:	movz x9, #0x5fa0
+    ffff9dddebac:	movk x9, #0xcb21, lsl #16
+    ffff9dddebb0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddebb4:	str x28, [x9]
+    ffff9dddebb8:	mov x27, x28
+    ffff9dddebbc:	add x11, x28, #0x78
+    ffff9dddebc0:	movz x28, #0x748
+    ffff9dddebc4:	movk x28, #0x966b, lsl #16
+    ffff9dddebc8:	movk x28, #0xffff, lsl #32
+    ffff9dddebcc:	str x28, [x27]
+    ffff9dddebd0:	ldp x27, x28, [sp, #0x20]
+    ffff9dddebd4:	ldp x29, x30, [sp], #0x30
+    ffff9dddebd8:	movz w0, #0x1
+    ffff9dddebdc:	ret 
+.ENTRY1:
+    ffff9dddebe0:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddebe4:	stp x27, x28, [sp, #0x20]
+    ffff9dddebe8:	mov x27, x0
+    ffff9dddebec:	ldr x28, [x27, #8]
+    ffff9dddebf0:	ldrb w11, [x27, #0x68]
+    ffff9dddebf4:	cbz w11, #.L81
+    ffff9dddebf8:	ldrb w11, [x27, #0x68]
+    ffff9dddebfc:	cmp w11, #0xa
+    ffff9dddec00:	b.eq #.L82
+    ffff9dddec04:	ldr x10, [x27, #0x60]
+    ffff9dddec08:	str x10, [x28, #0x50]
+    ffff9dddec0c:	ldr w8, [x27, #0x68]
+    ffff9dddec10:	str w8, [x28, #0x58]
+.L4:
+    ffff9dddec14:	movz x8, #0xa10
+    ffff9dddec18:	movk x8, #0x966b, lsl #16
+    ffff9dddec1c:	movk x8, #0xffff, lsl #32
+    ffff9dddec20:	str x8, [x27]
+    ffff9dddec24:	str xzr, [x27, #8]
+    ffff9dddec28:	str x27, [x28, #0x30]
+    ffff9dddec2c:	add x1, sp, #0x10
+    ffff9dddec30:	movz w11, #0x1
+    ffff9dddec34:	str w11, [x1, #8]
+    ffff9dddec38:	movz x9, #0x5fa0
+    ffff9dddec3c:	movk x9, #0xcb21, lsl #16
+    ffff9dddec40:	movk x9, #0xaaaa, lsl #32
+    ffff9dddec44:	str x28, [x9]
+    ffff9dddec48:	mov x0, x28
+    ffff9dddec4c:	movz x8, #0x60a4
+    ffff9dddec50:	movk x8, #0xca61, lsl #16
+    ffff9dddec54:	movk x8, #0xaaaa, lsl #32
+    ffff9dddec58:	blr x8
+    ffff9dddec5c:	movz x8, #0x5fa0
+    ffff9dddec60:	movk x8, #0xcb21, lsl #16
+    ffff9dddec64:	movk x8, #0xaaaa, lsl #32
+    ffff9dddec68:	str x27, [x8]
+    ffff9dddec6c:	ldrb w11, [x28, #0x59]
+    ffff9dddec70:	tst w11, #1
+    ffff9dddec74:	b.ne #.L84
+.L5:
+    ffff9dddec78:	ldrb w11, [x28, #0x2a]
+    ffff9dddec7c:	tst w11, #4
+    ffff9dddec80:	b.ne #.L85
+    ffff9dddec84:	movz x8, #0x5f80
+    ffff9dddec88:	movk x8, #0xcb21, lsl #16
+    ffff9dddec8c:	movk x8, #0xaaaa, lsl #32
+    ffff9dddec90:	str x28, [x8]
+.L6:
+    ffff9dddec94:	movz x11, #0x6118
+    ffff9dddec98:	movk x11, #0xcb21, lsl #16
+    ffff9dddec9c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddeca0:	ldr x8, [x11]
+    ffff9dddeca4:	cbnz x8, #JIT$$icall_throw
+    ffff9dddeca8:	movz x11, #0x5fda
+    ffff9dddecac:	movk x11, #0xcb21, lsl #16
+    ffff9dddecb0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddecb4:	ldrb w11, [x11]
+    ffff9dddecb8:	cbnz w11, #.L86
+    ffff9dddecbc:	movz x11, #0x5f80
+    ffff9dddecc0:	movk x11, #0xcb21, lsl #16
+    ffff9dddecc4:	movk x11, #0xaaaa, lsl #32
+    ffff9dddecc8:	ldr x28, [x11]
+    ffff9dddeccc:	movz x11, #0x5f88
+    ffff9dddecd0:	movk x11, #0xcb21, lsl #16
+    ffff9dddecd4:	movk x11, #0xaaaa, lsl #32
+    ffff9dddecd8:	ldr x10, [x11]
+    ffff9dddecdc:	sub x10, x10, x28
+    ffff9dddece0:	cmp x10, #0x60
+    ffff9dddece4:	b.lo #.L87
+    ffff9dddece8:	movz x11, #0x5f80
+    ffff9dddecec:	movk x11, #0xcb21, lsl #16
+    ffff9dddecf0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddecf4:	ldr x10, [x11]
+    ffff9dddecf8:	add x10, x10, #0x60
+    ffff9dddecfc:	str x10, [x11]
+    ffff9ddded00:	movz w11, #0
+    ffff9ddded04:	str w11, [x28, #0x28]
+.L7:
+    ffff9ddded08:	movz x9, #0xf640
+    ffff9ddded0c:	movk x9, #0xef34, lsl #16
+    ffff9ddded10:	movk x9, #0xaaaa, lsl #32
+    ffff9ddded14:	str x9, [x28, #0x18]
+    ffff9ddded18:	str xzr, [x28, #0x20]
+    ffff9ddded1c:	movz w11, #0x1
+    ffff9ddded20:	str w11, [x28, #0x2c]
+    ffff9ddded24:	str xzr, [x28, #0x30]
+    ffff9ddded28:	str x28, [x27, #8]
+    ffff9ddded2c:	ldr x8, [x27, #0x40]
+    ffff9ddded30:	ldr x8, [x8, #0x10]
+    ffff9ddded34:	cbz x8, #.L88
+.L8:
+    ffff9ddded38:	movz x11, #0x5f80
+    ffff9ddded3c:	movk x11, #0xcb21, lsl #16
+    ffff9ddded40:	movk x11, #0xaaaa, lsl #32
+    ffff9ddded44:	ldr x28, [x11]
+    ffff9ddded48:	movz x11, #0x5f88
+    ffff9ddded4c:	movk x11, #0xcb21, lsl #16
+    ffff9ddded50:	movk x11, #0xaaaa, lsl #32
+    ffff9ddded54:	ldr x10, [x11]
+    ffff9ddded58:	sub x10, x10, x28
+    ffff9ddded5c:	cmp x10, #0x80
+    ffff9ddded60:	b.lo #.L89
+    ffff9ddded64:	movz x11, #0x5f80
+    ffff9ddded68:	movk x11, #0xcb21, lsl #16
+    ffff9ddded6c:	movk x11, #0xaaaa, lsl #32
+    ffff9ddded70:	ldr x10, [x11]
+    ffff9ddded74:	add x10, x10, #0x80
+    ffff9ddded78:	str x10, [x11]
+    ffff9ddded7c:	movz w11, #0
+    ffff9ddded80:	str w11, [x28, #0x28]
+    ffff9ddded84:	str x8, [x28, #0x18]
+.L9:
+    ffff9ddded88:	str xzr, [x28, #0x20]
+    ffff9ddded8c:	movz w11, #0x2
+    ffff9ddded90:	str w11, [x28, #0x2c]
+    ffff9ddded94:	movz x8, #0x7d
+    ffff9ddded98:	str x8, [x28, #0x50]
+    ffff9ddded9c:	movz w8, #0x4
+    ffff9dddeda0:	str w8, [x28, #0x58]
+    ffff9dddeda4:	movz x8, #0x20
+    ffff9dddeda8:	str x8, [x28, #0x60]
+    ffff9dddedac:	movz w8, #0x4
+    ffff9dddedb0:	str w8, [x28, #0x68]
+    ffff9dddedb4:	movz x8, #0xab0
+    ffff9dddedb8:	movk x8, #0x966b, lsl #16
+    ffff9dddedbc:	movk x8, #0xffff, lsl #32
+    ffff9dddedc0:	str x8, [x27]
+    ffff9dddedc4:	str x27, [x28, #0x30]
+    ffff9dddedc8:	str xzr, [x28, #8]
+    ffff9dddedcc:	add x10, x27, #0x60
+    ffff9dddedd0:	str x10, [x28, #0x10]
+    ffff9dddedd4:	ldr x8, [x28, #0x18]
+    ffff9dddedd8:	ldr x10, [x8, #0x50]
+    ffff9dddeddc:	movz x11, #0x5d60
+    ffff9dddede0:	movk x11, #0xcb21, lsl #16
+    ffff9dddede4:	movk x11, #0xaaaa, lsl #32
+    ffff9dddede8:	ldr x9, [x11]
+    ffff9dddedec:	add x10, x10, x9
+    ffff9dddedf0:	ldr x10, [x10]
+    ffff9dddedf4:	str x10, [x28, #0x40]
+    ffff9dddedf8:	movz x9, #0x5fa0
+    ffff9dddedfc:	movk x9, #0xcb21, lsl #16
+    ffff9dddee00:	movk x9, #0xaaaa, lsl #32
+    ffff9dddee04:	str x28, [x9]
+    ffff9dddee08:	mov x27, x28
+    ffff9dddee0c:	add x11, x28, #0x78
+    ffff9dddee10:	movz x28, #0x748
+    ffff9dddee14:	movk x28, #0x966b, lsl #16
+    ffff9dddee18:	movk x28, #0xffff, lsl #32
+    ffff9dddee1c:	str x28, [x27]
+    ffff9dddee20:	ldp x27, x28, [sp, #0x20]
+    ffff9dddee24:	ldp x29, x30, [sp], #0x30
+    ffff9dddee28:	movz w0, #0x1
+    ffff9dddee2c:	ret 
+.ENTRY2:
+    ffff9dddee30:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddee34:	stp x27, x28, [sp, #0x20]
+    ffff9dddee38:	mov x27, x0
+    ffff9dddee3c:	ldr x28, [x27, #8]
+    ffff9dddee40:	ldrb w11, [x27, #0x68]
+    ffff9dddee44:	cbz w11, #.L90
+    ffff9dddee48:	ldrb w11, [x27, #0x68]
+    ffff9dddee4c:	cmp w11, #0xa
+    ffff9dddee50:	b.eq #.L91
+    ffff9dddee54:	ldr x10, [x27, #0x60]
+    ffff9dddee58:	str x10, [x28, #0x50]
+    ffff9dddee5c:	ldr w8, [x27, #0x68]
+    ffff9dddee60:	str w8, [x28, #0x58]
+.L10:
+    ffff9dddee64:	movz x8, #0xaf0
+    ffff9dddee68:	movk x8, #0x966b, lsl #16
+    ffff9dddee6c:	movk x8, #0xffff, lsl #32
+    ffff9dddee70:	str x8, [x27]
+    ffff9dddee74:	str xzr, [x27, #8]
+    ffff9dddee78:	str x27, [x28, #0x30]
+    ffff9dddee7c:	add x1, sp, #0x10
+    ffff9dddee80:	movz w11, #0x1
+    ffff9dddee84:	str w11, [x1, #8]
+    ffff9dddee88:	movz x9, #0x5fa0
+    ffff9dddee8c:	movk x9, #0xcb21, lsl #16
+    ffff9dddee90:	movk x9, #0xaaaa, lsl #32
+    ffff9dddee94:	str x28, [x9]
+    ffff9dddee98:	mov x0, x28
+    ffff9dddee9c:	movz x8, #0x60a4
+    ffff9dddeea0:	movk x8, #0xca61, lsl #16
+    ffff9dddeea4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddeea8:	blr x8
+    ffff9dddeeac:	movz x8, #0x5fa0
+    ffff9dddeeb0:	movk x8, #0xcb21, lsl #16
+    ffff9dddeeb4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddeeb8:	str x27, [x8]
+    ffff9dddeebc:	ldrb w11, [x28, #0x59]
+    ffff9dddeec0:	tst w11, #1
+    ffff9dddeec4:	b.ne #.L93
+.L11:
+    ffff9dddeec8:	ldrb w11, [x28, #0x2a]
+    ffff9dddeecc:	tst w11, #4
+    ffff9dddeed0:	b.ne #.L94
+    ffff9dddeed4:	movz x8, #0x5f80
+    ffff9dddeed8:	movk x8, #0xcb21, lsl #16
+    ffff9dddeedc:	movk x8, #0xaaaa, lsl #32
+    ffff9dddeee0:	str x28, [x8]
+.L12:
+    ffff9dddeee4:	movz x11, #0x6118
+    ffff9dddeee8:	movk x11, #0xcb21, lsl #16
+    ffff9dddeeec:	movk x11, #0xaaaa, lsl #32
+    ffff9dddeef0:	ldr x8, [x11]
+    ffff9dddeef4:	cbnz x8, #JIT$$icall_throw
+    ffff9dddeef8:	movz x11, #0x5fda
+    ffff9dddeefc:	movk x11, #0xcb21, lsl #16
+    ffff9dddef00:	movk x11, #0xaaaa, lsl #32
+    ffff9dddef04:	ldrb w11, [x11]
+    ffff9dddef08:	cbnz w11, #.L95
+    ffff9dddef0c:	movz x11, #0x5f80
+    ffff9dddef10:	movk x11, #0xcb21, lsl #16
+    ffff9dddef14:	movk x11, #0xaaaa, lsl #32
+    ffff9dddef18:	ldr x28, [x11]
+    ffff9dddef1c:	movz x11, #0x5f88
+    ffff9dddef20:	movk x11, #0xcb21, lsl #16
+    ffff9dddef24:	movk x11, #0xaaaa, lsl #32
+    ffff9dddef28:	ldr x10, [x11]
+    ffff9dddef2c:	sub x10, x10, x28
+    ffff9dddef30:	cmp x10, #0x60
+    ffff9dddef34:	b.lo #.L96
+    ffff9dddef38:	movz x11, #0x5f80
+    ffff9dddef3c:	movk x11, #0xcb21, lsl #16
+    ffff9dddef40:	movk x11, #0xaaaa, lsl #32
+    ffff9dddef44:	ldr x10, [x11]
+    ffff9dddef48:	add x10, x10, #0x60
+    ffff9dddef4c:	str x10, [x11]
+    ffff9dddef50:	movz w11, #0
+    ffff9dddef54:	str w11, [x28, #0x28]
+.L13:
+    ffff9dddef58:	movz x9, #0xf640
+    ffff9dddef5c:	movk x9, #0xef34, lsl #16
+    ffff9dddef60:	movk x9, #0xaaaa, lsl #32
+    ffff9dddef64:	str x9, [x28, #0x18]
+    ffff9dddef68:	str xzr, [x28, #0x20]
+    ffff9dddef6c:	movz w11, #0x1
+    ffff9dddef70:	str w11, [x28, #0x2c]
+    ffff9dddef74:	str xzr, [x28, #0x30]
+    ffff9dddef78:	str x28, [x27, #8]
+    ffff9dddef7c:	ldr x8, [x27, #0x40]
+    ffff9dddef80:	ldr x8, [x8, #0x10]
+    ffff9dddef84:	cbz x8, #.L97
+.L14:
+    ffff9dddef88:	movz x11, #0x5f80
+    ffff9dddef8c:	movk x11, #0xcb21, lsl #16
+    ffff9dddef90:	movk x11, #0xaaaa, lsl #32
+    ffff9dddef94:	ldr x28, [x11]
+    ffff9dddef98:	movz x11, #0x5f88
+    ffff9dddef9c:	movk x11, #0xcb21, lsl #16
+    ffff9dddefa0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddefa4:	ldr x10, [x11]
+    ffff9dddefa8:	sub x10, x10, x28
+    ffff9dddefac:	cmp x10, #0x80
+    ffff9dddefb0:	b.lo #.L98
+    ffff9dddefb4:	movz x11, #0x5f80
+    ffff9dddefb8:	movk x11, #0xcb21, lsl #16
+    ffff9dddefbc:	movk x11, #0xaaaa, lsl #32
+    ffff9dddefc0:	ldr x10, [x11]
+    ffff9dddefc4:	add x10, x10, #0x80
+    ffff9dddefc8:	str x10, [x11]
+    ffff9dddefcc:	movz w11, #0
+    ffff9dddefd0:	str w11, [x28, #0x28]
+    ffff9dddefd4:	str x8, [x28, #0x18]
+.L15:
+    ffff9dddefd8:	str xzr, [x28, #0x20]
+    ffff9dddefdc:	movz w11, #0x2
+    ffff9dddefe0:	str w11, [x28, #0x2c]
+    ffff9dddefe4:	movn x8, #0x7c
+    ffff9dddefe8:	str x8, [x28, #0x50]
+    ffff9dddefec:	movz w8, #0x4
+    ffff9dddeff0:	str w8, [x28, #0x58]
+    ffff9dddeff4:	movz x8, #0x21
+    ffff9dddeff8:	str x8, [x28, #0x60]
+    ffff9dddeffc:	movz w8, #0x4
+    ffff9dddf000:	str w8, [x28, #0x68]
+    ffff9dddf004:	movz x8, #0xb90
+    ffff9dddf008:	movk x8, #0x966b, lsl #16
+    ffff9dddf00c:	movk x8, #0xffff, lsl #32
+    ffff9dddf010:	str x8, [x27]
+    ffff9dddf014:	str x27, [x28, #0x30]
+    ffff9dddf018:	str xzr, [x28, #8]
+    ffff9dddf01c:	add x10, x27, #0x60
+    ffff9dddf020:	str x10, [x28, #0x10]
+    ffff9dddf024:	ldr x8, [x28, #0x18]
+    ffff9dddf028:	ldr x10, [x8, #0x50]
+    ffff9dddf02c:	movz x11, #0x5d60
+    ffff9dddf030:	movk x11, #0xcb21, lsl #16
+    ffff9dddf034:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf038:	ldr x9, [x11]
+    ffff9dddf03c:	add x10, x10, x9
+    ffff9dddf040:	ldr x10, [x10]
+    ffff9dddf044:	str x10, [x28, #0x40]
+    ffff9dddf048:	movz x9, #0x5fa0
+    ffff9dddf04c:	movk x9, #0xcb21, lsl #16
+    ffff9dddf050:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf054:	str x28, [x9]
+    ffff9dddf058:	mov x27, x28
+    ffff9dddf05c:	add x11, x28, #0x78
+    ffff9dddf060:	movz x28, #0x748
+    ffff9dddf064:	movk x28, #0x966b, lsl #16
+    ffff9dddf068:	movk x28, #0xffff, lsl #32
+    ffff9dddf06c:	str x28, [x27]
+    ffff9dddf070:	ldp x27, x28, [sp, #0x20]
+    ffff9dddf074:	ldp x29, x30, [sp], #0x30
+    ffff9dddf078:	movz w0, #0x1
+    ffff9dddf07c:	ret 
+.ENTRY3:
+    ffff9dddf080:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddf084:	stp x27, x28, [sp, #0x20]
+    ffff9dddf088:	mov x27, x0
+    ffff9dddf08c:	ldr x28, [x27, #8]
+    ffff9dddf090:	ldrb w11, [x27, #0x68]
+    ffff9dddf094:	cbz w11, #.L99
+    ffff9dddf098:	ldrb w11, [x27, #0x68]
+    ffff9dddf09c:	cmp w11, #0xa
+    ffff9dddf0a0:	b.eq #.L100
+    ffff9dddf0a4:	ldr x10, [x27, #0x60]
+    ffff9dddf0a8:	str x10, [x28, #0x50]
+    ffff9dddf0ac:	ldr w8, [x27, #0x68]
+    ffff9dddf0b0:	str w8, [x28, #0x58]
+.L16:
+    ffff9dddf0b4:	movz x8, #0xbd0
+    ffff9dddf0b8:	movk x8, #0x966b, lsl #16
+    ffff9dddf0bc:	movk x8, #0xffff, lsl #32
+    ffff9dddf0c0:	str x8, [x27]
+    ffff9dddf0c4:	str xzr, [x27, #8]
+    ffff9dddf0c8:	str x27, [x28, #0x30]
+    ffff9dddf0cc:	add x1, sp, #0x10
+    ffff9dddf0d0:	movz w11, #0x1
+    ffff9dddf0d4:	str w11, [x1, #8]
+    ffff9dddf0d8:	movz x9, #0x5fa0
+    ffff9dddf0dc:	movk x9, #0xcb21, lsl #16
+    ffff9dddf0e0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf0e4:	str x28, [x9]
+    ffff9dddf0e8:	mov x0, x28
+    ffff9dddf0ec:	movz x8, #0x60a4
+    ffff9dddf0f0:	movk x8, #0xca61, lsl #16
+    ffff9dddf0f4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf0f8:	blr x8
+    ffff9dddf0fc:	movz x8, #0x5fa0
+    ffff9dddf100:	movk x8, #0xcb21, lsl #16
+    ffff9dddf104:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf108:	str x27, [x8]
+    ffff9dddf10c:	ldrb w11, [x28, #0x59]
+    ffff9dddf110:	tst w11, #1
+    ffff9dddf114:	b.ne #.L102
+.L17:
+    ffff9dddf118:	ldrb w11, [x28, #0x2a]
+    ffff9dddf11c:	tst w11, #4
+    ffff9dddf120:	b.ne #.L103
+    ffff9dddf124:	movz x8, #0x5f80
+    ffff9dddf128:	movk x8, #0xcb21, lsl #16
+    ffff9dddf12c:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf130:	str x28, [x8]
+.L18:
+    ffff9dddf134:	movz x11, #0x6118
+    ffff9dddf138:	movk x11, #0xcb21, lsl #16
+    ffff9dddf13c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf140:	ldr x8, [x11]
+    ffff9dddf144:	cbnz x8, #JIT$$icall_throw
+    ffff9dddf148:	movz x11, #0x5fda
+    ffff9dddf14c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf150:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf154:	ldrb w11, [x11]
+    ffff9dddf158:	cbnz w11, #.L104
+    ffff9dddf15c:	movz x11, #0x5f80
+    ffff9dddf160:	movk x11, #0xcb21, lsl #16
+    ffff9dddf164:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf168:	ldr x28, [x11]
+    ffff9dddf16c:	movz x11, #0x5f88
+    ffff9dddf170:	movk x11, #0xcb21, lsl #16
+    ffff9dddf174:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf178:	ldr x10, [x11]
+    ffff9dddf17c:	sub x10, x10, x28
+    ffff9dddf180:	cmp x10, #0x60
+    ffff9dddf184:	b.lo #.L105
+    ffff9dddf188:	movz x11, #0x5f80
+    ffff9dddf18c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf190:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf194:	ldr x10, [x11]
+    ffff9dddf198:	add x10, x10, #0x60
+    ffff9dddf19c:	str x10, [x11]
+    ffff9dddf1a0:	movz w11, #0
+    ffff9dddf1a4:	str w11, [x28, #0x28]
+.L19:
+    ffff9dddf1a8:	movz x9, #0xf640
+    ffff9dddf1ac:	movk x9, #0xef34, lsl #16
+    ffff9dddf1b0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf1b4:	str x9, [x28, #0x18]
+    ffff9dddf1b8:	str xzr, [x28, #0x20]
+    ffff9dddf1bc:	movz w11, #0x1
+    ffff9dddf1c0:	str w11, [x28, #0x2c]
+    ffff9dddf1c4:	str xzr, [x28, #0x30]
+    ffff9dddf1c8:	str x28, [x27, #8]
+    ffff9dddf1cc:	ldr x8, [x27, #0x40]
+    ffff9dddf1d0:	ldr x8, [x8, #0x10]
+    ffff9dddf1d4:	cbz x8, #.L106
+.L20:
+    ffff9dddf1d8:	movz x11, #0x5f80
+    ffff9dddf1dc:	movk x11, #0xcb21, lsl #16
+    ffff9dddf1e0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf1e4:	ldr x28, [x11]
+    ffff9dddf1e8:	movz x11, #0x5f88
+    ffff9dddf1ec:	movk x11, #0xcb21, lsl #16
+    ffff9dddf1f0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf1f4:	ldr x10, [x11]
+    ffff9dddf1f8:	sub x10, x10, x28
+    ffff9dddf1fc:	cmp x10, #0x80
+    ffff9dddf200:	b.lo #.L107
+    ffff9dddf204:	movz x11, #0x5f80
+    ffff9dddf208:	movk x11, #0xcb21, lsl #16
+    ffff9dddf20c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf210:	ldr x10, [x11]
+    ffff9dddf214:	add x10, x10, #0x80
+    ffff9dddf218:	str x10, [x11]
+    ffff9dddf21c:	movz w11, #0
+    ffff9dddf220:	str w11, [x28, #0x28]
+    ffff9dddf224:	str x8, [x28, #0x18]
+.L21:
+    ffff9dddf228:	str xzr, [x28, #0x20]
+    ffff9dddf22c:	movz w11, #0x2
+    ffff9dddf230:	str w11, [x28, #0x2c]
+    ffff9dddf234:	movn x8, #0x7c
+    ffff9dddf238:	str x8, [x28, #0x50]
+    ffff9dddf23c:	movz w8, #0x4
+    ffff9dddf240:	str w8, [x28, #0x58]
+    ffff9dddf244:	movz x8, #0x20
+    ffff9dddf248:	str x8, [x28, #0x60]
+    ffff9dddf24c:	movz w8, #0x4
+    ffff9dddf250:	str w8, [x28, #0x68]
+    ffff9dddf254:	movz x8, #0xc70
+    ffff9dddf258:	movk x8, #0x966b, lsl #16
+    ffff9dddf25c:	movk x8, #0xffff, lsl #32
+    ffff9dddf260:	str x8, [x27]
+    ffff9dddf264:	str x27, [x28, #0x30]
+    ffff9dddf268:	str xzr, [x28, #8]
+    ffff9dddf26c:	add x10, x27, #0x60
+    ffff9dddf270:	str x10, [x28, #0x10]
+    ffff9dddf274:	ldr x8, [x28, #0x18]
+    ffff9dddf278:	ldr x10, [x8, #0x50]
+    ffff9dddf27c:	movz x11, #0x5d60
+    ffff9dddf280:	movk x11, #0xcb21, lsl #16
+    ffff9dddf284:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf288:	ldr x9, [x11]
+    ffff9dddf28c:	add x10, x10, x9
+    ffff9dddf290:	ldr x10, [x10]
+    ffff9dddf294:	str x10, [x28, #0x40]
+    ffff9dddf298:	movz x9, #0x5fa0
+    ffff9dddf29c:	movk x9, #0xcb21, lsl #16
+    ffff9dddf2a0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf2a4:	str x28, [x9]
+    ffff9dddf2a8:	mov x27, x28
+    ffff9dddf2ac:	add x11, x28, #0x78
+    ffff9dddf2b0:	movz x28, #0x748
+    ffff9dddf2b4:	movk x28, #0x966b, lsl #16
+    ffff9dddf2b8:	movk x28, #0xffff, lsl #32
+    ffff9dddf2bc:	str x28, [x27]
+    ffff9dddf2c0:	ldp x27, x28, [sp, #0x20]
+    ffff9dddf2c4:	ldp x29, x30, [sp], #0x30
+    ffff9dddf2c8:	movz w0, #0x1
+    ffff9dddf2cc:	ret 
+.ENTRY4:
+    ffff9dddf2d0:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddf2d4:	stp x27, x28, [sp, #0x20]
+    ffff9dddf2d8:	mov x27, x0
+    ffff9dddf2dc:	ldr x28, [x27, #8]
+    ffff9dddf2e0:	ldrb w11, [x27, #0x68]
+    ffff9dddf2e4:	cbz w11, #.L108
+    ffff9dddf2e8:	ldrb w11, [x27, #0x68]
+    ffff9dddf2ec:	cmp w11, #0xa
+    ffff9dddf2f0:	b.eq #.L109
+    ffff9dddf2f4:	ldr x10, [x27, #0x60]
+    ffff9dddf2f8:	str x10, [x28, #0x50]
+    ffff9dddf2fc:	ldr w8, [x27, #0x68]
+    ffff9dddf300:	str w8, [x28, #0x58]
+.L22:
+    ffff9dddf304:	movz x8, #0xcb0
+    ffff9dddf308:	movk x8, #0x966b, lsl #16
+    ffff9dddf30c:	movk x8, #0xffff, lsl #32
+    ffff9dddf310:	str x8, [x27]
+    ffff9dddf314:	str xzr, [x27, #8]
+    ffff9dddf318:	str x27, [x28, #0x30]
+    ffff9dddf31c:	add x1, sp, #0x10
+    ffff9dddf320:	movz w11, #0x1
+    ffff9dddf324:	str w11, [x1, #8]
+    ffff9dddf328:	movz x9, #0x5fa0
+    ffff9dddf32c:	movk x9, #0xcb21, lsl #16
+    ffff9dddf330:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf334:	str x28, [x9]
+    ffff9dddf338:	mov x0, x28
+    ffff9dddf33c:	movz x8, #0x60a4
+    ffff9dddf340:	movk x8, #0xca61, lsl #16
+    ffff9dddf344:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf348:	blr x8
+    ffff9dddf34c:	movz x8, #0x5fa0
+    ffff9dddf350:	movk x8, #0xcb21, lsl #16
+    ffff9dddf354:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf358:	str x27, [x8]
+    ffff9dddf35c:	ldrb w11, [x28, #0x59]
+    ffff9dddf360:	tst w11, #1
+    ffff9dddf364:	b.ne #.L111
+.L23:
+    ffff9dddf368:	ldrb w11, [x28, #0x2a]
+    ffff9dddf36c:	tst w11, #4
+    ffff9dddf370:	b.ne #.L112
+    ffff9dddf374:	movz x8, #0x5f80
+    ffff9dddf378:	movk x8, #0xcb21, lsl #16
+    ffff9dddf37c:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf380:	str x28, [x8]
+.L24:
+    ffff9dddf384:	movz x11, #0x6118
+    ffff9dddf388:	movk x11, #0xcb21, lsl #16
+    ffff9dddf38c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf390:	ldr x8, [x11]
+    ffff9dddf394:	cbnz x8, #JIT$$icall_throw
+    ffff9dddf398:	movz x11, #0x5fda
+    ffff9dddf39c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf3a0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf3a4:	ldrb w11, [x11]
+    ffff9dddf3a8:	cbnz w11, #.L113
+    ffff9dddf3ac:	movz x11, #0x5f80
+    ffff9dddf3b0:	movk x11, #0xcb21, lsl #16
+    ffff9dddf3b4:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf3b8:	ldr x28, [x11]
+    ffff9dddf3bc:	movz x11, #0x5f88
+    ffff9dddf3c0:	movk x11, #0xcb21, lsl #16
+    ffff9dddf3c4:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf3c8:	ldr x10, [x11]
+    ffff9dddf3cc:	sub x10, x10, x28
+    ffff9dddf3d0:	cmp x10, #0x60
+    ffff9dddf3d4:	b.lo #.L114
+    ffff9dddf3d8:	movz x11, #0x5f80
+    ffff9dddf3dc:	movk x11, #0xcb21, lsl #16
+    ffff9dddf3e0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf3e4:	ldr x10, [x11]
+    ffff9dddf3e8:	add x10, x10, #0x60
+    ffff9dddf3ec:	str x10, [x11]
+    ffff9dddf3f0:	movz w11, #0
+    ffff9dddf3f4:	str w11, [x28, #0x28]
+.L25:
+    ffff9dddf3f8:	movz x9, #0xf640
+    ffff9dddf3fc:	movk x9, #0xef34, lsl #16
+    ffff9dddf400:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf404:	str x9, [x28, #0x18]
+    ffff9dddf408:	str xzr, [x28, #0x20]
+    ffff9dddf40c:	movz w11, #0x1
+    ffff9dddf410:	str w11, [x28, #0x2c]
+    ffff9dddf414:	str xzr, [x28, #0x30]
+    ffff9dddf418:	str x28, [x27, #8]
+    ffff9dddf41c:	ldr x8, [x27, #0x40]
+    ffff9dddf420:	ldr x8, [x8, #0x10]
+    ffff9dddf424:	cbz x8, #.L115
+.L26:
+    ffff9dddf428:	movz x11, #0x5f80
+    ffff9dddf42c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf430:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf434:	ldr x28, [x11]
+    ffff9dddf438:	movz x11, #0x5f88
+    ffff9dddf43c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf440:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf444:	ldr x10, [x11]
+    ffff9dddf448:	sub x10, x10, x28
+    ffff9dddf44c:	cmp x10, #0x80
+    ffff9dddf450:	b.lo #.L116
+    ffff9dddf454:	movz x11, #0x5f80
+    ffff9dddf458:	movk x11, #0xcb21, lsl #16
+    ffff9dddf45c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf460:	ldr x10, [x11]
+    ffff9dddf464:	add x10, x10, #0x80
+    ffff9dddf468:	str x10, [x11]
+    ffff9dddf46c:	movz w11, #0
+    ffff9dddf470:	str w11, [x28, #0x28]
+    ffff9dddf474:	str x8, [x28, #0x18]
+.L27:
+    ffff9dddf478:	str xzr, [x28, #0x20]
+    ffff9dddf47c:	movz w11, #0x2
+    ffff9dddf480:	str w11, [x28, #0x2c]
+    ffff9dddf484:	movz x8, #0x7d
+    ffff9dddf488:	str x8, [x28, #0x50]
+    ffff9dddf48c:	movz w8, #0x4
+    ffff9dddf490:	str w8, [x28, #0x58]
+    ffff9dddf494:	movn x8, #0x20
+    ffff9dddf498:	str x8, [x28, #0x60]
+    ffff9dddf49c:	movz w8, #0x4
+    ffff9dddf4a0:	str w8, [x28, #0x68]
+    ffff9dddf4a4:	movz x8, #0xd50
+    ffff9dddf4a8:	movk x8, #0x966b, lsl #16
+    ffff9dddf4ac:	movk x8, #0xffff, lsl #32
+    ffff9dddf4b0:	str x8, [x27]
+    ffff9dddf4b4:	str x27, [x28, #0x30]
+    ffff9dddf4b8:	str xzr, [x28, #8]
+    ffff9dddf4bc:	add x10, x27, #0x60
+    ffff9dddf4c0:	str x10, [x28, #0x10]
+    ffff9dddf4c4:	ldr x8, [x28, #0x18]
+    ffff9dddf4c8:	ldr x10, [x8, #0x50]
+    ffff9dddf4cc:	movz x11, #0x5d60
+    ffff9dddf4d0:	movk x11, #0xcb21, lsl #16
+    ffff9dddf4d4:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf4d8:	ldr x9, [x11]
+    ffff9dddf4dc:	add x10, x10, x9
+    ffff9dddf4e0:	ldr x10, [x10]
+    ffff9dddf4e4:	str x10, [x28, #0x40]
+    ffff9dddf4e8:	movz x9, #0x5fa0
+    ffff9dddf4ec:	movk x9, #0xcb21, lsl #16
+    ffff9dddf4f0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf4f4:	str x28, [x9]
+    ffff9dddf4f8:	mov x27, x28
+    ffff9dddf4fc:	add x11, x28, #0x78
+    ffff9dddf500:	movz x28, #0x748
+    ffff9dddf504:	movk x28, #0x966b, lsl #16
+    ffff9dddf508:	movk x28, #0xffff, lsl #32
+    ffff9dddf50c:	str x28, [x27]
+    ffff9dddf510:	ldp x27, x28, [sp, #0x20]
+    ffff9dddf514:	ldp x29, x30, [sp], #0x30
+    ffff9dddf518:	movz w0, #0x1
+    ffff9dddf51c:	ret 
+.ENTRY5:
+    ffff9dddf520:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddf524:	stp x27, x28, [sp, #0x20]
+    ffff9dddf528:	mov x27, x0
+    ffff9dddf52c:	ldr x28, [x27, #8]
+    ffff9dddf530:	ldrb w11, [x27, #0x68]
+    ffff9dddf534:	cbz w11, #.L117
+    ffff9dddf538:	ldrb w11, [x27, #0x68]
+    ffff9dddf53c:	cmp w11, #0xa
+    ffff9dddf540:	b.eq #.L118
+    ffff9dddf544:	ldr x10, [x27, #0x60]
+    ffff9dddf548:	str x10, [x28, #0x50]
+    ffff9dddf54c:	ldr w8, [x27, #0x68]
+    ffff9dddf550:	str w8, [x28, #0x58]
+.L28:
+    ffff9dddf554:	movz x8, #0xd90
+    ffff9dddf558:	movk x8, #0x966b, lsl #16
+    ffff9dddf55c:	movk x8, #0xffff, lsl #32
+    ffff9dddf560:	str x8, [x27]
+    ffff9dddf564:	str xzr, [x27, #8]
+    ffff9dddf568:	str x27, [x28, #0x30]
+    ffff9dddf56c:	add x1, sp, #0x10
+    ffff9dddf570:	movz w11, #0x1
+    ffff9dddf574:	str w11, [x1, #8]
+    ffff9dddf578:	movz x9, #0x5fa0
+    ffff9dddf57c:	movk x9, #0xcb21, lsl #16
+    ffff9dddf580:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf584:	str x28, [x9]
+    ffff9dddf588:	mov x0, x28
+    ffff9dddf58c:	movz x8, #0x60a4
+    ffff9dddf590:	movk x8, #0xca61, lsl #16
+    ffff9dddf594:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf598:	blr x8
+    ffff9dddf59c:	movz x8, #0x5fa0
+    ffff9dddf5a0:	movk x8, #0xcb21, lsl #16
+    ffff9dddf5a4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf5a8:	str x27, [x8]
+    ffff9dddf5ac:	ldrb w11, [x28, #0x59]
+    ffff9dddf5b0:	tst w11, #1
+    ffff9dddf5b4:	b.ne #.L120
+.L29:
+    ffff9dddf5b8:	ldrb w11, [x28, #0x2a]
+    ffff9dddf5bc:	tst w11, #4
+    ffff9dddf5c0:	b.ne #.L121
+    ffff9dddf5c4:	movz x8, #0x5f80
+    ffff9dddf5c8:	movk x8, #0xcb21, lsl #16
+    ffff9dddf5cc:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf5d0:	str x28, [x8]
+.L30:
+    ffff9dddf5d4:	movz x11, #0x6118
+    ffff9dddf5d8:	movk x11, #0xcb21, lsl #16
+    ffff9dddf5dc:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf5e0:	ldr x8, [x11]
+    ffff9dddf5e4:	cbnz x8, #JIT$$icall_throw
+    ffff9dddf5e8:	movz x11, #0x5fda
+    ffff9dddf5ec:	movk x11, #0xcb21, lsl #16
+    ffff9dddf5f0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf5f4:	ldrb w11, [x11]
+    ffff9dddf5f8:	cbnz w11, #.L122
+    ffff9dddf5fc:	movz x11, #0x5f80
+    ffff9dddf600:	movk x11, #0xcb21, lsl #16
+    ffff9dddf604:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf608:	ldr x28, [x11]
+    ffff9dddf60c:	movz x11, #0x5f88
+    ffff9dddf610:	movk x11, #0xcb21, lsl #16
+    ffff9dddf614:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf618:	ldr x10, [x11]
+    ffff9dddf61c:	sub x10, x10, x28
+    ffff9dddf620:	cmp x10, #0x60
+    ffff9dddf624:	b.lo #.L123
+    ffff9dddf628:	movz x11, #0x5f80
+    ffff9dddf62c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf630:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf634:	ldr x10, [x11]
+    ffff9dddf638:	add x10, x10, #0x60
+    ffff9dddf63c:	str x10, [x11]
+    ffff9dddf640:	movz w11, #0
+    ffff9dddf644:	str w11, [x28, #0x28]
+.L31:
+    ffff9dddf648:	movz x9, #0xf640
+    ffff9dddf64c:	movk x9, #0xef34, lsl #16
+    ffff9dddf650:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf654:	str x9, [x28, #0x18]
+    ffff9dddf658:	str xzr, [x28, #0x20]
+    ffff9dddf65c:	movz w11, #0x1
+    ffff9dddf660:	str w11, [x28, #0x2c]
+    ffff9dddf664:	str xzr, [x28, #0x30]
+    ffff9dddf668:	str x28, [x27, #8]
+    ffff9dddf66c:	ldr x8, [x27, #0x40]
+    ffff9dddf670:	ldr x8, [x8, #0x10]
+    ffff9dddf674:	cbz x8, #.L124
+.L32:
+    ffff9dddf678:	movz x11, #0x5f80
+    ffff9dddf67c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf680:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf684:	ldr x28, [x11]
+    ffff9dddf688:	movz x11, #0x5f88
+    ffff9dddf68c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf690:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf694:	ldr x10, [x11]
+    ffff9dddf698:	sub x10, x10, x28
+    ffff9dddf69c:	cmp x10, #0x80
+    ffff9dddf6a0:	b.lo #.L125
+    ffff9dddf6a4:	movz x11, #0x5f80
+    ffff9dddf6a8:	movk x11, #0xcb21, lsl #16
+    ffff9dddf6ac:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf6b0:	ldr x10, [x11]
+    ffff9dddf6b4:	add x10, x10, #0x80
+    ffff9dddf6b8:	str x10, [x11]
+    ffff9dddf6bc:	movz w11, #0
+    ffff9dddf6c0:	str w11, [x28, #0x28]
+    ffff9dddf6c4:	str x8, [x28, #0x18]
+.L33:
+    ffff9dddf6c8:	str xzr, [x28, #0x20]
+    ffff9dddf6cc:	movz w11, #0x2
+    ffff9dddf6d0:	str w11, [x28, #0x2c]
+    ffff9dddf6d4:	movn x8, #0x7c
+    ffff9dddf6d8:	str x8, [x28, #0x50]
+    ffff9dddf6dc:	movz w8, #0x4
+    ffff9dddf6e0:	str w8, [x28, #0x58]
+    ffff9dddf6e4:	movn x8, #0x20
+    ffff9dddf6e8:	str x8, [x28, #0x60]
+    ffff9dddf6ec:	movz w8, #0x4
+    ffff9dddf6f0:	str w8, [x28, #0x68]
+    ffff9dddf6f4:	movz x8, #0xe30
+    ffff9dddf6f8:	movk x8, #0x966b, lsl #16
+    ffff9dddf6fc:	movk x8, #0xffff, lsl #32
+    ffff9dddf700:	str x8, [x27]
+    ffff9dddf704:	str x27, [x28, #0x30]
+    ffff9dddf708:	str xzr, [x28, #8]
+    ffff9dddf70c:	add x10, x27, #0x60
+    ffff9dddf710:	str x10, [x28, #0x10]
+    ffff9dddf714:	ldr x8, [x28, #0x18]
+    ffff9dddf718:	ldr x10, [x8, #0x50]
+    ffff9dddf71c:	movz x11, #0x5d60
+    ffff9dddf720:	movk x11, #0xcb21, lsl #16
+    ffff9dddf724:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf728:	ldr x9, [x11]
+    ffff9dddf72c:	add x10, x10, x9
+    ffff9dddf730:	ldr x10, [x10]
+    ffff9dddf734:	str x10, [x28, #0x40]
+    ffff9dddf738:	movz x9, #0x5fa0
+    ffff9dddf73c:	movk x9, #0xcb21, lsl #16
+    ffff9dddf740:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf744:	str x28, [x9]
+    ffff9dddf748:	mov x27, x28
+    ffff9dddf74c:	add x11, x28, #0x78
+    ffff9dddf750:	movz x28, #0x748
+    ffff9dddf754:	movk x28, #0x966b, lsl #16
+    ffff9dddf758:	movk x28, #0xffff, lsl #32
+    ffff9dddf75c:	str x28, [x27]
+    ffff9dddf760:	ldp x27, x28, [sp, #0x20]
+    ffff9dddf764:	ldp x29, x30, [sp], #0x30
+    ffff9dddf768:	movz w0, #0x1
+    ffff9dddf76c:	ret 
+.ENTRY6:
+    ffff9dddf770:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddf774:	stp x27, x28, [sp, #0x20]
+    ffff9dddf778:	mov x27, x0
+    ffff9dddf77c:	ldr x28, [x27, #8]
+    ffff9dddf780:	ldrb w11, [x27, #0x68]
+    ffff9dddf784:	cbz w11, #.L126
+    ffff9dddf788:	ldrb w11, [x27, #0x68]
+    ffff9dddf78c:	cmp w11, #0xa
+    ffff9dddf790:	b.eq #.L127
+    ffff9dddf794:	ldr x10, [x27, #0x60]
+    ffff9dddf798:	str x10, [x28, #0x50]
+    ffff9dddf79c:	ldr w8, [x27, #0x68]
+    ffff9dddf7a0:	str w8, [x28, #0x58]
+.L34:
+    ffff9dddf7a4:	movz x8, #0xe70
+    ffff9dddf7a8:	movk x8, #0x966b, lsl #16
+    ffff9dddf7ac:	movk x8, #0xffff, lsl #32
+    ffff9dddf7b0:	str x8, [x27]
+    ffff9dddf7b4:	str xzr, [x27, #8]
+    ffff9dddf7b8:	str x27, [x28, #0x30]
+    ffff9dddf7bc:	add x1, sp, #0x10
+    ffff9dddf7c0:	movz w11, #0x1
+    ffff9dddf7c4:	str w11, [x1, #8]
+    ffff9dddf7c8:	movz x9, #0x5fa0
+    ffff9dddf7cc:	movk x9, #0xcb21, lsl #16
+    ffff9dddf7d0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf7d4:	str x28, [x9]
+    ffff9dddf7d8:	mov x0, x28
+    ffff9dddf7dc:	movz x8, #0x60a4
+    ffff9dddf7e0:	movk x8, #0xca61, lsl #16
+    ffff9dddf7e4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf7e8:	blr x8
+    ffff9dddf7ec:	movz x8, #0x5fa0
+    ffff9dddf7f0:	movk x8, #0xcb21, lsl #16
+    ffff9dddf7f4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf7f8:	str x27, [x8]
+    ffff9dddf7fc:	ldrb w11, [x28, #0x59]
+    ffff9dddf800:	tst w11, #1
+    ffff9dddf804:	b.ne #.L129
+.L35:
+    ffff9dddf808:	ldrb w11, [x28, #0x2a]
+    ffff9dddf80c:	tst w11, #4
+    ffff9dddf810:	b.ne #.L130
+    ffff9dddf814:	movz x8, #0x5f80
+    ffff9dddf818:	movk x8, #0xcb21, lsl #16
+    ffff9dddf81c:	movk x8, #0xaaaa, lsl #32
+    ffff9dddf820:	str x28, [x8]
+.L36:
+    ffff9dddf824:	movz x11, #0x6118
+    ffff9dddf828:	movk x11, #0xcb21, lsl #16
+    ffff9dddf82c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf830:	ldr x8, [x11]
+    ffff9dddf834:	cbnz x8, #JIT$$icall_throw
+    ffff9dddf838:	movz x11, #0x5fda
+    ffff9dddf83c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf840:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf844:	ldrb w11, [x11]
+    ffff9dddf848:	cbnz w11, #.L131
+    ffff9dddf84c:	movz x11, #0x5f80
+    ffff9dddf850:	movk x11, #0xcb21, lsl #16
+    ffff9dddf854:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf858:	ldr x28, [x11]
+    ffff9dddf85c:	movz x11, #0x5f88
+    ffff9dddf860:	movk x11, #0xcb21, lsl #16
+    ffff9dddf864:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf868:	ldr x10, [x11]
+    ffff9dddf86c:	sub x10, x10, x28
+    ffff9dddf870:	cmp x10, #0x60
+    ffff9dddf874:	b.lo #.L132
+    ffff9dddf878:	movz x11, #0x5f80
+    ffff9dddf87c:	movk x11, #0xcb21, lsl #16
+    ffff9dddf880:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf884:	ldr x10, [x11]
+    ffff9dddf888:	add x10, x10, #0x60
+    ffff9dddf88c:	str x10, [x11]
+    ffff9dddf890:	movz w11, #0
+    ffff9dddf894:	str w11, [x28, #0x28]
+.L37:
+    ffff9dddf898:	movz x9, #0xf640
+    ffff9dddf89c:	movk x9, #0xef34, lsl #16
+    ffff9dddf8a0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf8a4:	str x9, [x28, #0x18]
+    ffff9dddf8a8:	str xzr, [x28, #0x20]
+    ffff9dddf8ac:	movz w11, #0x1
+    ffff9dddf8b0:	str w11, [x28, #0x2c]
+    ffff9dddf8b4:	str xzr, [x28, #0x30]
+    ffff9dddf8b8:	str x28, [x27, #8]
+    ffff9dddf8bc:	ldr x8, [x27, #0x40]
+    ffff9dddf8c0:	ldr x8, [x8, #0x10]
+    ffff9dddf8c4:	cbz x8, #.L133
+.L38:
+    ffff9dddf8c8:	movz x11, #0x5f80
+    ffff9dddf8cc:	movk x11, #0xcb21, lsl #16
+    ffff9dddf8d0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf8d4:	ldr x28, [x11]
+    ffff9dddf8d8:	movz x11, #0x5f88
+    ffff9dddf8dc:	movk x11, #0xcb21, lsl #16
+    ffff9dddf8e0:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf8e4:	ldr x10, [x11]
+    ffff9dddf8e8:	sub x10, x10, x28
+    ffff9dddf8ec:	cmp x10, #0x80
+    ffff9dddf8f0:	b.lo #.L134
+    ffff9dddf8f4:	movz x11, #0x5f80
+    ffff9dddf8f8:	movk x11, #0xcb21, lsl #16
+    ffff9dddf8fc:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf900:	ldr x10, [x11]
+    ffff9dddf904:	add x10, x10, #0x80
+    ffff9dddf908:	str x10, [x11]
+    ffff9dddf90c:	movz w11, #0
+    ffff9dddf910:	str w11, [x28, #0x28]
+    ffff9dddf914:	str x8, [x28, #0x18]
+.L39:
+    ffff9dddf918:	str xzr, [x28, #0x20]
+    ffff9dddf91c:	movz w11, #0x2
+    ffff9dddf920:	str w11, [x28, #0x2c]
+    ffff9dddf924:	movz x8, #0x7d
+    ffff9dddf928:	str x8, [x28, #0x50]
+    ffff9dddf92c:	movz w8, #0x4
+    ffff9dddf930:	str w8, [x28, #0x58]
+    ffff9dddf934:	movn x8, #0
+    ffff9dddf938:	str x8, [x28, #0x60]
+    ffff9dddf93c:	movz w8, #0x4
+    ffff9dddf940:	str w8, [x28, #0x68]
+    ffff9dddf944:	movz x8, #0xf10
+    ffff9dddf948:	movk x8, #0x966b, lsl #16
+    ffff9dddf94c:	movk x8, #0xffff, lsl #32
+    ffff9dddf950:	str x8, [x27]
+    ffff9dddf954:	str x27, [x28, #0x30]
+    ffff9dddf958:	str xzr, [x28, #8]
+    ffff9dddf95c:	add x10, x27, #0x60
+    ffff9dddf960:	str x10, [x28, #0x10]
+    ffff9dddf964:	ldr x8, [x28, #0x18]
+    ffff9dddf968:	ldr x10, [x8, #0x50]
+    ffff9dddf96c:	movz x11, #0x5d60
+    ffff9dddf970:	movk x11, #0xcb21, lsl #16
+    ffff9dddf974:	movk x11, #0xaaaa, lsl #32
+    ffff9dddf978:	ldr x9, [x11]
+    ffff9dddf97c:	add x10, x10, x9
+    ffff9dddf980:	ldr x10, [x10]
+    ffff9dddf984:	str x10, [x28, #0x40]
+    ffff9dddf988:	movz x9, #0x5fa0
+    ffff9dddf98c:	movk x9, #0xcb21, lsl #16
+    ffff9dddf990:	movk x9, #0xaaaa, lsl #32
+    ffff9dddf994:	str x28, [x9]
+    ffff9dddf998:	mov x27, x28
+    ffff9dddf99c:	add x11, x28, #0x78
+    ffff9dddf9a0:	movz x28, #0x748
+    ffff9dddf9a4:	movk x28, #0x966b, lsl #16
+    ffff9dddf9a8:	movk x28, #0xffff, lsl #32
+    ffff9dddf9ac:	str x28, [x27]
+    ffff9dddf9b0:	ldp x27, x28, [sp, #0x20]
+    ffff9dddf9b4:	ldp x29, x30, [sp], #0x30
+    ffff9dddf9b8:	movz w0, #0x1
+    ffff9dddf9bc:	ret 
+.ENTRY7:
+    ffff9dddf9c0:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddf9c4:	stp x27, x28, [sp, #0x20]
+    ffff9dddf9c8:	mov x27, x0
+    ffff9dddf9cc:	ldr x28, [x27, #8]
+    ffff9dddf9d0:	ldrb w11, [x27, #0x68]
+    ffff9dddf9d4:	cbz w11, #.L135
+    ffff9dddf9d8:	ldrb w11, [x27, #0x68]
+    ffff9dddf9dc:	cmp w11, #0xa
+    ffff9dddf9e0:	b.eq #.L136
+    ffff9dddf9e4:	ldr x10, [x27, #0x60]
+    ffff9dddf9e8:	str x10, [x28, #0x50]
+    ffff9dddf9ec:	ldr w8, [x27, #0x68]
+    ffff9dddf9f0:	str w8, [x28, #0x58]
+.L40:
+    ffff9dddf9f4:	movz x8, #0xf50
+    ffff9dddf9f8:	movk x8, #0x966b, lsl #16
+    ffff9dddf9fc:	movk x8, #0xffff, lsl #32
+    ffff9dddfa00:	str x8, [x27]
+    ffff9dddfa04:	str xzr, [x27, #8]
+    ffff9dddfa08:	str x27, [x28, #0x30]
+    ffff9dddfa0c:	add x1, sp, #0x10
+    ffff9dddfa10:	movz w11, #0x1
+    ffff9dddfa14:	str w11, [x1, #8]
+    ffff9dddfa18:	movz x9, #0x5fa0
+    ffff9dddfa1c:	movk x9, #0xcb21, lsl #16
+    ffff9dddfa20:	movk x9, #0xaaaa, lsl #32
+    ffff9dddfa24:	str x28, [x9]
+    ffff9dddfa28:	mov x0, x28
+    ffff9dddfa2c:	movz x8, #0x60a4
+    ffff9dddfa30:	movk x8, #0xca61, lsl #16
+    ffff9dddfa34:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfa38:	blr x8
+    ffff9dddfa3c:	movz x8, #0x5fa0
+    ffff9dddfa40:	movk x8, #0xcb21, lsl #16
+    ffff9dddfa44:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfa48:	str x27, [x8]
+    ffff9dddfa4c:	ldrb w11, [x28, #0x59]
+    ffff9dddfa50:	tst w11, #1
+    ffff9dddfa54:	b.ne #.L138
+.L41:
+    ffff9dddfa58:	ldrb w11, [x28, #0x2a]
+    ffff9dddfa5c:	tst w11, #4
+    ffff9dddfa60:	b.ne #.L139
+    ffff9dddfa64:	movz x8, #0x5f80
+    ffff9dddfa68:	movk x8, #0xcb21, lsl #16
+    ffff9dddfa6c:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfa70:	str x28, [x8]
+.L42:
+    ffff9dddfa74:	movz x11, #0x6118
+    ffff9dddfa78:	movk x11, #0xcb21, lsl #16
+    ffff9dddfa7c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfa80:	ldr x8, [x11]
+    ffff9dddfa84:	cbnz x8, #JIT$$icall_throw
+    ffff9dddfa88:	movz x11, #0x5fda
+    ffff9dddfa8c:	movk x11, #0xcb21, lsl #16
+    ffff9dddfa90:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfa94:	ldrb w11, [x11]
+    ffff9dddfa98:	cbnz w11, #.L140
+    ffff9dddfa9c:	b #.L57
+    ffff9dddfaa0:	movz x28, #0xf90
+    ffff9dddfaa4:	movk x28, #0x966b, lsl #16
+    ffff9dddfaa8:	movk x28, #0xffff, lsl #32
+    ffff9dddfaac:	str x28, [x27]
+    ffff9dddfab0:	mov x0, x27
+    ffff9dddfab4:	ldp x27, x28, [sp, #0x20]
+    ffff9dddfab8:	ldp x29, x30, [sp], #0x30
+    ffff9dddfabc:	movz x8, #0xfe9c
+    ffff9dddfac0:	movk x8, #0xca76, lsl #16
+    ffff9dddfac4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfac8:	br x8
+    ffff9dddfacc:	add x0, x27, #0x50
+    ffff9dddfad0:	ldrb w11, [x0, #8]
+    ffff9dddfad4:	cmp w11, #0xa
+    ffff9dddfad8:	b.ne #.L43
+    ffff9dddfadc:	ldr x0, [x0]
+    ffff9dddfae0:	add x0, x0, #8
+.L43:
+    ffff9dddfae4:	ldrb w11, [x0, #8]
+    ffff9dddfae8:	cmp w11, #8
+    ffff9dddfaec:	b.ne #.L141
+    ffff9dddfaf0:	ldr x0, [x0]
+    ffff9dddfaf4:	str x0, [sp, #0x10]
+    ffff9dddfaf8:	ldr x8, [x27, #0x40]
+    ffff9dddfafc:	ldr x10, [x8, #0x20]
+    ffff9dddfb00:	ldr x11, [x0, #0x10]
+    ffff9dddfb04:	cmp x10, x11
+    ffff9dddfb08:	b.ne #.L142
+    ffff9dddfb0c:	ldr x8, [x8, #0x28]
+.L44:
+    ffff9dddfb10:	ldr w11, [x8, #4]
+    ffff9dddfb14:	tst w11, #0x10
+    ffff9dddfb18:	b.ne #.L143
+    ffff9dddfb1c:	movz w0, #0x50
+    ffff9dddfb20:	ldrb w11, [x8]
+    ffff9dddfb24:	tst w11, #1
+    ffff9dddfb28:	b.ne #.L45
+    ffff9dddfb2c:	movz w10, #0
+    ffff9dddfb30:	ldr w11, [x8, #0x20]
+    ffff9dddfb34:	cmp w10, w11
+    ffff9dddfb38:	csel w10, w10, w11, le
+    ffff9dddfb3c:	ldr w11, [x8, #0x3c]
+    ffff9dddfb40:	sub w10, w10, w11
+    ffff9dddfb44:	ldr w11, [x8, #0x40]
+    ffff9dddfb48:	sub w10, w10, w11
+    ffff9dddfb4c:	sxtw x10, w10
+    ffff9dddfb50:	sub x0, x0, x10, lsl #4
+.L45:
+    ffff9dddfb54:	movz x11, #0x5f80
+    ffff9dddfb58:	movk x11, #0xcb21, lsl #16
+    ffff9dddfb5c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfb60:	ldr x28, [x11]
+    ffff9dddfb64:	movz x11, #0x5f88
+    ffff9dddfb68:	movk x11, #0xcb21, lsl #16
+    ffff9dddfb6c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfb70:	ldr x10, [x11]
+    ffff9dddfb74:	sub x10, x10, x28
+    ffff9dddfb78:	cmp x10, x0
+    ffff9dddfb7c:	b.lo #.L144
+    ffff9dddfb80:	movz x11, #0x5f80
+    ffff9dddfb84:	movk x11, #0xcb21, lsl #16
+    ffff9dddfb88:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfb8c:	ldr x10, [x11]
+    ffff9dddfb90:	add x10, x10, x0
+    ffff9dddfb94:	str x10, [x11]
+    ffff9dddfb98:	movz w11, #0
+    ffff9dddfb9c:	str w11, [x28, #0x28]
+    ffff9dddfba0:	str x8, [x28, #0x18]
+.L46:
+    ffff9dddfba4:	ldr x9, [sp, #0x10]
+    ffff9dddfba8:	str x9, [x28, #0x20]
+    ffff9dddfbac:	ldr w11, [x9]
+    ffff9dddfbb0:	add w11, w11, #1
+    ffff9dddfbb4:	str w11, [x9]
+    ffff9dddfbb8:	ldr w11, [x28, #0x28]
+    ffff9dddfbbc:	movz w12, #0x308
+    ffff9dddfbc0:	movk w12, #0x20, lsl #16
+    ffff9dddfbc4:	orr w11, w11, w12
+    ffff9dddfbc8:	str w11, [x28, #0x28]
+    ffff9dddfbcc:	movz w11, #0
+    ffff9dddfbd0:	str w11, [x28, #0x2c]
+.L47:
+    ffff9dddfbd4:	movz x8, #0xfd0
+    ffff9dddfbd8:	movk x8, #0x966b, lsl #16
+    ffff9dddfbdc:	movk x8, #0xffff, lsl #32
+    ffff9dddfbe0:	str x8, [x27]
+    ffff9dddfbe4:	str x27, [x28, #0x30]
+    ffff9dddfbe8:	ldr x8, [x28, #0x18]
+    ffff9dddfbec:	ldr w11, [x8, #4]
+    ffff9dddfbf0:	tst w11, #0x800
+    ffff9dddfbf4:	b.ne #.L145
+.L48:
+    ffff9dddfbf8:	ldrb w11, [x8]
+    ffff9dddfbfc:	cmp w11, #2
+    ffff9dddfc00:	b.ne #.L53
+    ffff9dddfc04:	str xzr, [x28, #8]
+    ffff9dddfc08:	add x10, x27, #0x60
+    ffff9dddfc0c:	str x10, [x28, #0x10]
+    ffff9dddfc10:	ldr x10, [x8, #0x50]
+    ffff9dddfc14:	tst x10, #1
+    ffff9dddfc18:	b.eq #.L49
+    ffff9dddfc1c:	movz x11, #0x5d60
+    ffff9dddfc20:	movk x11, #0xcb21, lsl #16
+    ffff9dddfc24:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfc28:	ldr x9, [x11]
+    ffff9dddfc2c:	add x10, x10, x9
+.L49:
+    ffff9dddfc30:	ldr x10, [x10]
+    ffff9dddfc34:	str x10, [x28, #0x40]
+    ffff9dddfc38:	movz x9, #0x5fa0
+    ffff9dddfc3c:	movk x9, #0xcb21, lsl #16
+    ffff9dddfc40:	movk x9, #0xaaaa, lsl #32
+    ffff9dddfc44:	str x28, [x9]
+    ffff9dddfc48:	mov x27, x28
+    ffff9dddfc4c:	ldr x0, [x8, #0x48]
+    ffff9dddfc50:	str x0, [x27]
+    ffff9dddfc54:	ldr w10, [x8, #0x20]
+    ffff9dddfc58:	ldr w9, [x27, #0x2c]
+    ffff9dddfc5c:	cmp w9, w10
+    ffff9dddfc60:	b.gt #.L146
+    ffff9dddfc64:	ldr w11, [x8, #4]
+    ffff9dddfc68:	tst w11, #0x100
+    ffff9dddfc6c:	b.ne #.L50
+    ffff9dddfc70:	mov w10, w9
+    ffff9dddfc74:	ldr x11, [x27]
+    ffff9dddfc78:	add x11, x11, x10, lsl #5
+    ffff9dddfc7c:	str x11, [x27]
+.L50:
+    ffff9dddfc80:	ldr w10, [x8, #0x3c]
+    ffff9dddfc84:	subs w10, w10, w9
+    ffff9dddfc88:	b.le #.L52
+    ffff9dddfc8c:	add x9, x27, x9, lsl #4
+    ffff9dddfc90:	add x9, x9, #0x50
+.L51:
+    ffff9dddfc94:	movz w11, #0
+    ffff9dddfc98:	str w11, [x9, #8]
+    ffff9dddfc9c:	add x9, x9, #0x10
+    ffff9dddfca0:	subs w10, w10, #1
+    ffff9dddfca4:	b.ne #.L51
+.L52:
+    ffff9dddfca8:	ldp x27, x28, [sp, #0x20]
+    ffff9dddfcac:	ldp x29, x30, [sp], #0x30
+    ffff9dddfcb0:	movz w0, #0x1
+    ffff9dddfcb4:	ret 
+.L53:
+    ffff9dddfcb8:	add x1, x27, #0x60
+    ffff9dddfcbc:	movz w11, #0x1
+    ffff9dddfcc0:	str w11, [x1, #8]
+    ffff9dddfcc4:	movz x9, #0x5fa0
+    ffff9dddfcc8:	movk x9, #0xcb21, lsl #16
+    ffff9dddfccc:	movk x9, #0xaaaa, lsl #32
+    ffff9dddfcd0:	str x28, [x9]
+    ffff9dddfcd4:	mov x0, x28
+    ffff9dddfcd8:	ldr x11, [x8, #0x38]
+    ffff9dddfcdc:	blr x11
+    ffff9dddfce0:	movz x8, #0x5fa0
+    ffff9dddfce4:	movk x8, #0xcb21, lsl #16
+    ffff9dddfce8:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfcec:	str x27, [x8]
+    ffff9dddfcf0:	mov x0, x28
+    ffff9dddfcf4:	bl #zend_jit_vm_stack_free_args_helper
+    ffff9dddfcf8:	ldrb w11, [x28, #0x2a]
+    ffff9dddfcfc:	tst w11, #0x20
+    ffff9dddfd00:	b.ne #.L147
+.L54:
+    ffff9dddfd04:	ldrb w11, [x28, #0x2a]
+    ffff9dddfd08:	tst w11, #4
+    ffff9dddfd0c:	b.ne #.L150
+    ffff9dddfd10:	movz x8, #0x5f80
+    ffff9dddfd14:	movk x8, #0xcb21, lsl #16
+    ffff9dddfd18:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfd1c:	str x28, [x8]
+.L55:
+    ffff9dddfd20:	movz x11, #0x6118
+    ffff9dddfd24:	movk x11, #0xcb21, lsl #16
+    ffff9dddfd28:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfd2c:	ldr x8, [x11]
+    ffff9dddfd30:	cbnz x8, #JIT$$icall_throw
+    ffff9dddfd34:	movz x11, #0x5fda
+    ffff9dddfd38:	movk x11, #0xcb21, lsl #16
+    ffff9dddfd3c:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfd40:	ldrb w11, [x11]
+    ffff9dddfd44:	cbnz w11, #.L151
+    ffff9dddfd48:	movz x28, #0xff0
+    ffff9dddfd4c:	movk x28, #0x966b, lsl #16
+    ffff9dddfd50:	movk x28, #0xffff, lsl #32
+    ffff9dddfd54:	str x28, [x27]
+    ffff9dddfd58:	b #.L56
+.ENTRY8:
+    ffff9dddfd5c:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddfd60:	stp x27, x28, [sp, #0x20]
+    ffff9dddfd64:	mov x27, x0
+.L56:
+    ffff9dddfd68:	mov x0, x27
+    ffff9dddfd6c:	movz x8, #0x970c
+    ffff9dddfd70:	movk x8, #0xca77, lsl #16
+    ffff9dddfd74:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfd78:	blr x8
+    ffff9dddfd7c:	movz x11, #0x6118
+    ffff9dddfd80:	movk x11, #0xcb21, lsl #16
+    ffff9dddfd84:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfd88:	ldr x8, [x11]
+    ffff9dddfd8c:	cbnz x8, #JIT$$exception_handler
+    ffff9dddfd90:	mov x0, x27
+    ffff9dddfd94:	movz x8, #0xba24
+    ffff9dddfd98:	movk x8, #0xca78, lsl #16
+    ffff9dddfd9c:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfda0:	blr x8
+    ffff9dddfda4:	movz x11, #0x6118
+    ffff9dddfda8:	movk x11, #0xcb21, lsl #16
+    ffff9dddfdac:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfdb0:	ldr x8, [x11]
+    ffff9dddfdb4:	cbnz x8, #JIT$$exception_handler
+    ffff9dddfdb8:	mov x0, x27
+    ffff9dddfdbc:	movz x8, #0x9170
+    ffff9dddfdc0:	movk x8, #0xca78, lsl #16
+    ffff9dddfdc4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddfdc8:	blr x8
+    ffff9dddfdcc:	movz x11, #0x6118
+    ffff9dddfdd0:	movk x11, #0xcb21, lsl #16
+    ffff9dddfdd4:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfdd8:	ldr x8, [x11]
+    ffff9dddfddc:	cbnz x8, #JIT$$exception_handler
+.L57:
+    ffff9dddfde0:	movz x11, #0x5f80
+    ffff9dddfde4:	movk x11, #0xcb21, lsl #16
+    ffff9dddfde8:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfdec:	ldr x28, [x11]
+    ffff9dddfdf0:	movz x11, #0x5f88
+    ffff9dddfdf4:	movk x11, #0xcb21, lsl #16
+    ffff9dddfdf8:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfdfc:	ldr x10, [x11]
+    ffff9dddfe00:	sub x10, x10, x28
+    ffff9dddfe04:	cmp x10, #0x60
+    ffff9dddfe08:	b.lo #.L152
+    ffff9dddfe0c:	movz x11, #0x5f80
+    ffff9dddfe10:	movk x11, #0xcb21, lsl #16
+    ffff9dddfe14:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfe18:	ldr x10, [x11]
+    ffff9dddfe1c:	add x10, x10, #0x60
+    ffff9dddfe20:	str x10, [x11]
+    ffff9dddfe24:	movz w11, #0
+    ffff9dddfe28:	str w11, [x28, #0x28]
+.L58:
+    ffff9dddfe2c:	movz x9, #0xf640
+    ffff9dddfe30:	movk x9, #0xef34, lsl #16
+    ffff9dddfe34:	movk x9, #0xaaaa, lsl #32
+    ffff9dddfe38:	str x9, [x28, #0x18]
+    ffff9dddfe3c:	str xzr, [x28, #0x20]
+    ffff9dddfe40:	movz w11, #0x1
+    ffff9dddfe44:	str w11, [x28, #0x2c]
+    ffff9dddfe48:	str xzr, [x28, #0x30]
+    ffff9dddfe4c:	str x28, [x27, #8]
+    ffff9dddfe50:	ldr x8, [x27, #0x40]
+    ffff9dddfe54:	ldr x8, [x8, #0x10]
+    ffff9dddfe58:	cbz x8, #.L153
+.L59:
+    ffff9dddfe5c:	movz x11, #0x5f80
+    ffff9dddfe60:	movk x11, #0xcb21, lsl #16
+    ffff9dddfe64:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfe68:	ldr x28, [x11]
+    ffff9dddfe6c:	movz x11, #0x5f88
+    ffff9dddfe70:	movk x11, #0xcb21, lsl #16
+    ffff9dddfe74:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfe78:	ldr x10, [x11]
+    ffff9dddfe7c:	sub x10, x10, x28
+    ffff9dddfe80:	cmp x10, #0x80
+    ffff9dddfe84:	b.lo #.L154
+    ffff9dddfe88:	movz x11, #0x5f80
+    ffff9dddfe8c:	movk x11, #0xcb21, lsl #16
+    ffff9dddfe90:	movk x11, #0xaaaa, lsl #32
+    ffff9dddfe94:	ldr x10, [x11]
+    ffff9dddfe98:	add x10, x10, #0x80
+    ffff9dddfe9c:	str x10, [x11]
+    ffff9dddfea0:	movz w11, #0
+    ffff9dddfea4:	str w11, [x28, #0x28]
+    ffff9dddfea8:	str x8, [x28, #0x18]
+.L60:
+    ffff9dddfeac:	str xzr, [x28, #0x20]
+    ffff9dddfeb0:	movz w11, #0x2
+    ffff9dddfeb4:	str w11, [x28, #0x2c]
+    ffff9dddfeb8:	movz x8, #0x7d
+    ffff9dddfebc:	str x8, [x28, #0x50]
+    ffff9dddfec0:	movz w8, #0x4
+    ffff9dddfec4:	str w8, [x28, #0x58]
+    ffff9dddfec8:	str xzr, [x28, #0x60]
+    ffff9dddfecc:	movz w8, #0x4
+    ffff9dddfed0:	str w8, [x28, #0x68]
+    ffff9dddfed4:	movz x8, #0x10d0
+    ffff9dddfed8:	movk x8, #0x966b, lsl #16
+    ffff9dddfedc:	movk x8, #0xffff, lsl #32
+    ffff9dddfee0:	str x8, [x27]
+    ffff9dddfee4:	str x27, [x28, #0x30]
+    ffff9dddfee8:	str xzr, [x28, #8]
+    ffff9dddfeec:	add x10, x27, #0x60
+    ffff9dddfef0:	str x10, [x28, #0x10]
+    ffff9dddfef4:	ldr x8, [x28, #0x18]
+    ffff9dddfef8:	ldr x10, [x8, #0x50]
+    ffff9dddfefc:	movz x11, #0x5d60
+    ffff9dddff00:	movk x11, #0xcb21, lsl #16
+    ffff9dddff04:	movk x11, #0xaaaa, lsl #32
+    ffff9dddff08:	ldr x9, [x11]
+    ffff9dddff0c:	add x10, x10, x9
+    ffff9dddff10:	ldr x10, [x10]
+    ffff9dddff14:	str x10, [x28, #0x40]
+    ffff9dddff18:	movz x9, #0x5fa0
+    ffff9dddff1c:	movk x9, #0xcb21, lsl #16
+    ffff9dddff20:	movk x9, #0xaaaa, lsl #32
+    ffff9dddff24:	str x28, [x9]
+    ffff9dddff28:	mov x27, x28
+    ffff9dddff2c:	add x11, x28, #0x78
+    ffff9dddff30:	movz x28, #0x748
+    ffff9dddff34:	movk x28, #0x966b, lsl #16
+    ffff9dddff38:	movk x28, #0xffff, lsl #32
+    ffff9dddff3c:	str x28, [x27]
+    ffff9dddff40:	ldp x27, x28, [sp, #0x20]
+    ffff9dddff44:	ldp x29, x30, [sp], #0x30
+    ffff9dddff48:	movz w0, #0x1
+    ffff9dddff4c:	ret 
+.ENTRY9:
+    ffff9dddff50:	stp x29, x30, [sp, #-0x30]!
+    ffff9dddff54:	stp x27, x28, [sp, #0x20]
+    ffff9dddff58:	mov x27, x0
+    ffff9dddff5c:	ldr x28, [x27, #8]
+    ffff9dddff60:	ldrb w11, [x27, #0x68]
+    ffff9dddff64:	cbz w11, #.L155
+    ffff9dddff68:	ldrb w11, [x27, #0x68]
+    ffff9dddff6c:	cmp w11, #0xa
+    ffff9dddff70:	b.eq #.L156
+    ffff9dddff74:	ldr x10, [x27, #0x60]
+    ffff9dddff78:	str x10, [x28, #0x50]
+    ffff9dddff7c:	ldr w8, [x27, #0x68]
+    ffff9dddff80:	str w8, [x28, #0x58]
+.L61:
+    ffff9dddff84:	movz x8, #0x1110
+    ffff9dddff88:	movk x8, #0x966b, lsl #16
+    ffff9dddff8c:	movk x8, #0xffff, lsl #32
+    ffff9dddff90:	str x8, [x27]
+    ffff9dddff94:	str xzr, [x27, #8]
+    ffff9dddff98:	str x27, [x28, #0x30]
+    ffff9dddff9c:	add x1, sp, #0x10
+    ffff9dddffa0:	movz w11, #0x1
+    ffff9dddffa4:	str w11, [x1, #8]
+    ffff9dddffa8:	movz x9, #0x5fa0
+    ffff9dddffac:	movk x9, #0xcb21, lsl #16
+    ffff9dddffb0:	movk x9, #0xaaaa, lsl #32
+    ffff9dddffb4:	str x28, [x9]
+    ffff9dddffb8:	mov x0, x28
+    ffff9dddffbc:	movz x8, #0x60a4
+    ffff9dddffc0:	movk x8, #0xca61, lsl #16
+    ffff9dddffc4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddffc8:	blr x8
+    ffff9dddffcc:	movz x8, #0x5fa0
+    ffff9dddffd0:	movk x8, #0xcb21, lsl #16
+    ffff9dddffd4:	movk x8, #0xaaaa, lsl #32
+    ffff9dddffd8:	str x27, [x8]
+    ffff9dddffdc:	ldrb w11, [x28, #0x59]
+    ffff9dddffe0:	tst w11, #1
+    ffff9dddffe4:	b.ne #.L158
+.L62:
+    ffff9dddffe8:	ldrb w11, [x28, #0x2a]
+    ffff9dddffec:	tst w11, #4
+    ffff9dddfff0:	b.ne #.L159
+    ffff9dddfff4:	movz x8, #0x5f80
+    ffff9dddfff8:	movk x8, #0xcb21, lsl #16
+    ffff9dddfffc:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0000:	str x28, [x8]
+.L63:
+    ffff9dde0004:	movz x11, #0x6118
+    ffff9dde0008:	movk x11, #0xcb21, lsl #16
+    ffff9dde000c:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0010:	ldr x8, [x11]
+    ffff9dde0014:	cbnz x8, #JIT$$icall_throw
+    ffff9dde0018:	movz x11, #0x5fda
+    ffff9dde001c:	movk x11, #0xcb21, lsl #16
+    ffff9dde0020:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0024:	ldrb w11, [x11]
+    ffff9dde0028:	cbnz w11, #.L160
+    ffff9dde002c:	movz x28, #0x1130
+    ffff9dde0030:	movk x28, #0x966b, lsl #16
+    ffff9dde0034:	movk x28, #0xffff, lsl #32
+    ffff9dde0038:	str x28, [x27]
+    ffff9dde003c:	mov x0, x27
+    ffff9dde0040:	ldp x27, x28, [sp, #0x20]
+    ffff9dde0044:	ldp x29, x30, [sp], #0x30
+    ffff9dde0048:	movz x8, #0xee88
+    ffff9dde004c:	movk x8, #0xca76, lsl #16
+    ffff9dde0050:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0054:	br x8
+    ffff9dde0058:	movz x28, #0x1150
+    ffff9dde005c:	movk x28, #0x966b, lsl #16
+    ffff9dde0060:	movk x28, #0xffff, lsl #32
+    ffff9dde0064:	str x28, [x27]
+    ffff9dde0068:	mov x0, x27
+    ffff9dde006c:	ldp x27, x28, [sp, #0x20]
+    ffff9dde0070:	ldp x29, x30, [sp], #0x30
+    ffff9dde0074:	movz x8, #0xfe9c
+    ffff9dde0078:	movk x8, #0xca76, lsl #16
+    ffff9dde007c:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0080:	br x8
+    ffff9dde0084:	movz x28, #0x1170
+    ffff9dde0088:	movk x28, #0x966b, lsl #16
+    ffff9dde008c:	movk x28, #0xffff, lsl #32
+    ffff9dde0090:	str x28, [x27]
+    ffff9dde0094:	mov x0, x27
+    ffff9dde0098:	movz x8, #0x55ec
+    ffff9dde009c:	movk x8, #0xca7e, lsl #16
+    ffff9dde00a0:	movk x8, #0xaaaa, lsl #32
+    ffff9dde00a4:	blr x8
+    ffff9dde00a8:	movz x11, #0x6118
+    ffff9dde00ac:	movk x11, #0xcb21, lsl #16
+    ffff9dde00b0:	movk x11, #0xaaaa, lsl #32
+    ffff9dde00b4:	ldr x8, [x11]
+    ffff9dde00b8:	cbnz x8, #JIT$$exception_handler
+    ffff9dde00bc:	mov x0, x27
+    ffff9dde00c0:	movz x8, #0x970c
+    ffff9dde00c4:	movk x8, #0xca77, lsl #16
+    ffff9dde00c8:	movk x8, #0xaaaa, lsl #32
+    ffff9dde00cc:	blr x8
+    ffff9dde00d0:	movz x11, #0x6118
+    ffff9dde00d4:	movk x11, #0xcb21, lsl #16
+    ffff9dde00d8:	movk x11, #0xaaaa, lsl #32
+    ffff9dde00dc:	ldr x8, [x11]
+    ffff9dde00e0:	cbnz x8, #JIT$$exception_handler
+    ffff9dde00e4:	mov x0, x27
+    ffff9dde00e8:	movz x8, #0xba24
+    ffff9dde00ec:	movk x8, #0xca78, lsl #16
+    ffff9dde00f0:	movk x8, #0xaaaa, lsl #32
+    ffff9dde00f4:	blr x8
+    ffff9dde00f8:	movz x11, #0x6118
+    ffff9dde00fc:	movk x11, #0xcb21, lsl #16
+    ffff9dde0100:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0104:	ldr x8, [x11]
+    ffff9dde0108:	cbnz x8, #JIT$$exception_handler
+    ffff9dde010c:	add x0, x27, #0x50
+    ffff9dde0110:	ldrb w11, [x0, #8]
+    ffff9dde0114:	cmp w11, #0xa
+    ffff9dde0118:	b.ne #.L64
+    ffff9dde011c:	ldr x0, [x0]
+    ffff9dde0120:	add x0, x0, #8
+.L64:
+    ffff9dde0124:	ldrb w11, [x0, #8]
+    ffff9dde0128:	cmp w11, #8
+    ffff9dde012c:	b.ne #.L161
+    ffff9dde0130:	ldr x0, [x0]
+    ffff9dde0134:	str x0, [sp, #0x10]
+    ffff9dde0138:	ldr x8, [x27, #0x40]
+    ffff9dde013c:	ldr x10, [x8, #0x30]
+    ffff9dde0140:	ldr x11, [x0, #0x10]
+    ffff9dde0144:	cmp x10, x11
+    ffff9dde0148:	b.ne #.L162
+    ffff9dde014c:	ldr x8, [x8, #0x38]
+.L65:
+    ffff9dde0150:	ldr w11, [x8, #4]
+    ffff9dde0154:	tst w11, #0x10
+    ffff9dde0158:	b.ne #.L163
+    ffff9dde015c:	movz w0, #0x50
+    ffff9dde0160:	ldrb w11, [x8]
+    ffff9dde0164:	tst w11, #1
+    ffff9dde0168:	b.ne #.L66
+    ffff9dde016c:	movz w10, #0
+    ffff9dde0170:	ldr w11, [x8, #0x20]
+    ffff9dde0174:	cmp w10, w11
+    ffff9dde0178:	csel w10, w10, w11, le
+    ffff9dde017c:	ldr w11, [x8, #0x3c]
+    ffff9dde0180:	sub w10, w10, w11
+    ffff9dde0184:	ldr w11, [x8, #0x40]
+    ffff9dde0188:	sub w10, w10, w11
+    ffff9dde018c:	sxtw x10, w10
+    ffff9dde0190:	sub x0, x0, x10, lsl #4
+.L66:
+    ffff9dde0194:	movz x11, #0x5f80
+    ffff9dde0198:	movk x11, #0xcb21, lsl #16
+    ffff9dde019c:	movk x11, #0xaaaa, lsl #32
+    ffff9dde01a0:	ldr x28, [x11]
+    ffff9dde01a4:	movz x11, #0x5f88
+    ffff9dde01a8:	movk x11, #0xcb21, lsl #16
+    ffff9dde01ac:	movk x11, #0xaaaa, lsl #32
+    ffff9dde01b0:	ldr x10, [x11]
+    ffff9dde01b4:	sub x10, x10, x28
+    ffff9dde01b8:	cmp x10, x0
+    ffff9dde01bc:	b.lo #.L164
+    ffff9dde01c0:	movz x11, #0x5f80
+    ffff9dde01c4:	movk x11, #0xcb21, lsl #16
+    ffff9dde01c8:	movk x11, #0xaaaa, lsl #32
+    ffff9dde01cc:	ldr x10, [x11]
+    ffff9dde01d0:	add x10, x10, x0
+    ffff9dde01d4:	str x10, [x11]
+    ffff9dde01d8:	movz w11, #0
+    ffff9dde01dc:	str w11, [x28, #0x28]
+    ffff9dde01e0:	str x8, [x28, #0x18]
+.L67:
+    ffff9dde01e4:	ldr x9, [sp, #0x10]
+    ffff9dde01e8:	str x9, [x28, #0x20]
+    ffff9dde01ec:	ldr w11, [x9]
+    ffff9dde01f0:	add w11, w11, #1
+    ffff9dde01f4:	str w11, [x9]
+    ffff9dde01f8:	ldr w11, [x28, #0x28]
+    ffff9dde01fc:	movz w12, #0x308
+    ffff9dde0200:	movk w12, #0x20, lsl #16
+    ffff9dde0204:	orr w11, w11, w12
+    ffff9dde0208:	str w11, [x28, #0x28]
+    ffff9dde020c:	movz w11, #0
+    ffff9dde0210:	str w11, [x28, #0x2c]
+.L68:
+    ffff9dde0214:	movz x8, #0x11f0
+    ffff9dde0218:	movk x8, #0x966b, lsl #16
+    ffff9dde021c:	movk x8, #0xffff, lsl #32
+    ffff9dde0220:	str x8, [x27]
+    ffff9dde0224:	str x27, [x28, #0x30]
+    ffff9dde0228:	ldr x8, [x28, #0x18]
+    ffff9dde022c:	ldr w11, [x8, #4]
+    ffff9dde0230:	tst w11, #0x800
+    ffff9dde0234:	b.ne #.L165
+.L69:
+    ffff9dde0238:	ldrb w11, [x8]
+    ffff9dde023c:	cmp w11, #2
+    ffff9dde0240:	b.ne #.L74
+    ffff9dde0244:	str xzr, [x28, #8]
+    ffff9dde0248:	add x10, x27, #0x80
+    ffff9dde024c:	str x10, [x28, #0x10]
+    ffff9dde0250:	ldr x10, [x8, #0x50]
+    ffff9dde0254:	tst x10, #1
+    ffff9dde0258:	b.eq #.L70
+    ffff9dde025c:	movz x11, #0x5d60
+    ffff9dde0260:	movk x11, #0xcb21, lsl #16
+    ffff9dde0264:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0268:	ldr x9, [x11]
+    ffff9dde026c:	add x10, x10, x9
+.L70:
+    ffff9dde0270:	ldr x10, [x10]
+    ffff9dde0274:	str x10, [x28, #0x40]
+    ffff9dde0278:	movz x9, #0x5fa0
+    ffff9dde027c:	movk x9, #0xcb21, lsl #16
+    ffff9dde0280:	movk x9, #0xaaaa, lsl #32
+    ffff9dde0284:	str x28, [x9]
+    ffff9dde0288:	mov x27, x28
+    ffff9dde028c:	ldr x0, [x8, #0x48]
+    ffff9dde0290:	str x0, [x27]
+    ffff9dde0294:	ldr w10, [x8, #0x20]
+    ffff9dde0298:	ldr w9, [x27, #0x2c]
+    ffff9dde029c:	cmp w9, w10
+    ffff9dde02a0:	b.gt #.L166
+    ffff9dde02a4:	ldr w11, [x8, #4]
+    ffff9dde02a8:	tst w11, #0x100
+    ffff9dde02ac:	b.ne #.L71
+    ffff9dde02b0:	mov w10, w9
+    ffff9dde02b4:	ldr x11, [x27]
+    ffff9dde02b8:	add x11, x11, x10, lsl #5
+    ffff9dde02bc:	str x11, [x27]
+.L71:
+    ffff9dde02c0:	ldr w10, [x8, #0x3c]
+    ffff9dde02c4:	subs w10, w10, w9
+    ffff9dde02c8:	b.le #.L73
+    ffff9dde02cc:	add x9, x27, x9, lsl #4
+    ffff9dde02d0:	add x9, x9, #0x50
+.L72:
+    ffff9dde02d4:	movz w11, #0
+    ffff9dde02d8:	str w11, [x9, #8]
+    ffff9dde02dc:	add x9, x9, #0x10
+    ffff9dde02e0:	subs w10, w10, #1
+    ffff9dde02e4:	b.ne #.L72
+.L73:
+    ffff9dde02e8:	ldp x27, x28, [sp, #0x20]
+    ffff9dde02ec:	ldp x29, x30, [sp], #0x30
+    ffff9dde02f0:	movz w0, #0x1
+    ffff9dde02f4:	ret 
+.L74:
+    ffff9dde02f8:	add x1, x27, #0x80
+    ffff9dde02fc:	movz w11, #0x1
+    ffff9dde0300:	str w11, [x1, #8]
+    ffff9dde0304:	movz x9, #0x5fa0
+    ffff9dde0308:	movk x9, #0xcb21, lsl #16
+    ffff9dde030c:	movk x9, #0xaaaa, lsl #32
+    ffff9dde0310:	str x28, [x9]
+    ffff9dde0314:	mov x0, x28
+    ffff9dde0318:	ldr x11, [x8, #0x38]
+    ffff9dde031c:	blr x11
+    ffff9dde0320:	movz x8, #0x5fa0
+    ffff9dde0324:	movk x8, #0xcb21, lsl #16
+    ffff9dde0328:	movk x8, #0xaaaa, lsl #32
+    ffff9dde032c:	str x27, [x8]
+    ffff9dde0330:	mov x0, x28
+    ffff9dde0334:	bl #zend_jit_vm_stack_free_args_helper
+    ffff9dde0338:	ldrb w11, [x28, #0x2a]
+    ffff9dde033c:	tst w11, #0x20
+    ffff9dde0340:	b.ne #.L167
+.L75:
+    ffff9dde0344:	ldrb w11, [x28, #0x2a]
+    ffff9dde0348:	tst w11, #4
+    ffff9dde034c:	b.ne #.L170
+    ffff9dde0350:	movz x8, #0x5f80
+    ffff9dde0354:	movk x8, #0xcb21, lsl #16
+    ffff9dde0358:	movk x8, #0xaaaa, lsl #32
+    ffff9dde035c:	str x28, [x8]
+.L76:
+    ffff9dde0360:	movz x11, #0x6118
+    ffff9dde0364:	movk x11, #0xcb21, lsl #16
+    ffff9dde0368:	movk x11, #0xaaaa, lsl #32
+    ffff9dde036c:	ldr x8, [x11]
+    ffff9dde0370:	cbnz x8, #JIT$$icall_throw
+    ffff9dde0374:	movz x11, #0x5fda
+    ffff9dde0378:	movk x11, #0xcb21, lsl #16
+    ffff9dde037c:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0380:	ldrb w11, [x11]
+    ffff9dde0384:	cbnz w11, #.L171
+    ffff9dde0388:	movz x28, #0x1210
+    ffff9dde038c:	movk x28, #0x966b, lsl #16
+    ffff9dde0390:	movk x28, #0xffff, lsl #32
+    ffff9dde0394:	str x28, [x27]
+    ffff9dde0398:	b #.L77
+.ENTRY10:
+    ffff9dde039c:	stp x29, x30, [sp, #-0x30]!
+    ffff9dde03a0:	stp x27, x28, [sp, #0x20]
+    ffff9dde03a4:	mov x27, x0
+.L77:
+    ffff9dde03a8:	mov x0, x27
+    ffff9dde03ac:	movz x8, #0x41c
+    ffff9dde03b0:	movk x8, #0xca79, lsl #16
+    ffff9dde03b4:	movk x8, #0xaaaa, lsl #32
+    ffff9dde03b8:	blr x8
+    ffff9dde03bc:	movz x11, #0x6118
+    ffff9dde03c0:	movk x11, #0xcb21, lsl #16
+    ffff9dde03c4:	movk x11, #0xaaaa, lsl #32
+    ffff9dde03c8:	ldr x8, [x11]
+    ffff9dde03cc:	cbnz x8, #JIT$$exception_handler
+    ffff9dde03d0:	mov x0, x27
+    ffff9dde03d4:	movz x8, #0xba24
+    ffff9dde03d8:	movk x8, #0xca78, lsl #16
+    ffff9dde03dc:	movk x8, #0xaaaa, lsl #32
+    ffff9dde03e0:	blr x8
+    ffff9dde03e4:	movz x11, #0x6118
+    ffff9dde03e8:	movk x11, #0xcb21, lsl #16
+    ffff9dde03ec:	movk x11, #0xaaaa, lsl #32
+    ffff9dde03f0:	ldr x8, [x11]
+    ffff9dde03f4:	cbnz x8, #JIT$$exception_handler
+    ffff9dde03f8:	mov x0, x27
+    ffff9dde03fc:	movz x8, #0x9170
+    ffff9dde0400:	movk x8, #0xca78, lsl #16
+    ffff9dde0404:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0408:	blr x8
+    ffff9dde040c:	movz x11, #0x6118
+    ffff9dde0410:	movk x11, #0xcb21, lsl #16
+    ffff9dde0414:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0418:	ldr x8, [x11]
+    ffff9dde041c:	cbnz x8, #JIT$$exception_handler
+    ffff9dde0420:	mov x0, x27
+    ffff9dde0424:	ldp x27, x28, [sp, #0x20]
+    ffff9dde0428:	ldp x29, x30, [sp], #0x30
+    ffff9dde042c:	movz x8, #0xee88
+    ffff9dde0430:	movk x8, #0xca76, lsl #16
+    ffff9dde0434:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0438:	br x8
+.L78:
+    ffff9dde043c:	movz w0, #0x60
+    ffff9dde0440:	movz x8, #0x950
+    ffff9dde0444:	movk x8, #0x966b, lsl #16
+    ffff9dde0448:	movk x8, #0xffff, lsl #32
+    ffff9dde044c:	str x8, [x27]
+    ffff9dde0450:	bl #zend_jit_int_extend_stack_helper
+    ffff9dde0454:	mov x28, x0
+    ffff9dde0458:	b #.L1
+.L79:
+    ffff9dde045c:	movz x0, #0x618
+    ffff9dde0460:	movk x0, #0x966b, lsl #16
+    ffff9dde0464:	movk x0, #0xffff, lsl #32
+    ffff9dde0468:	bl #zend_jit_init_func_run_time_cache_helper
+    ffff9dde046c:	ldr x9, [x27, #0x40]
+    ffff9dde0470:	mov x8, x0
+    ffff9dde0474:	str x8, [x9, #0x10]
+    ffff9dde0478:	b #.L2
+.L80:
+    ffff9dde047c:	movz w0, #0x80
+    ffff9dde0480:	mov x1, x8
+    ffff9dde0484:	movz x8, #0x970
+    ffff9dde0488:	movk x8, #0x966b, lsl #16
+    ffff9dde048c:	movk x8, #0xffff, lsl #32
+    ffff9dde0490:	str x8, [x27]
+    ffff9dde0494:	bl #zend_jit_extend_stack_helper
+    ffff9dde0498:	mov x28, x0
+    ffff9dde049c:	b #.L3
+.L81:
+    ffff9dde04a0:	movz x8, #0x9f0
+    ffff9dde04a4:	movk x8, #0x966b, lsl #16
+    ffff9dde04a8:	movk x8, #0xffff, lsl #32
+    ffff9dde04ac:	str x8, [x27]
+    ffff9dde04b0:	movz w0, #0x60
+    ffff9dde04b4:	bl #zend_jit_undefined_op_helper
+    ffff9dde04b8:	movz w11, #0x1
+    ffff9dde04bc:	str w11, [x28, #0x58]
+    ffff9dde04c0:	cbz x0, #JIT$$exception_handler
+    ffff9dde04c4:	b #.L4
+.L82:
+    ffff9dde04c8:	ldr x0, [x27, #0x60]
+    ffff9dde04cc:	ldr x10, [x0, #8]
+    ffff9dde04d0:	str x10, [x28, #0x50]
+    ffff9dde04d4:	ldr w8, [x0, #0x10]
+    ffff9dde04d8:	str w8, [x28, #0x58]
+    ffff9dde04dc:	ldr w11, [x0]
+    ffff9dde04e0:	subs w11, w11, #1
+    ffff9dde04e4:	str w11, [x0]
+    ffff9dde04e8:	b.eq #.L83
+    ffff9dde04ec:	tst w8, #0x100
+    ffff9dde04f0:	b.eq #.L4
+    ffff9dde04f4:	ldr w11, [x10]
+    ffff9dde04f8:	add w11, w11, #1
+    ffff9dde04fc:	str w11, [x10]
+    ffff9dde0500:	b #.L4
+.L83:
+    ffff9dde0504:	mov x1, xzr
+    ffff9dde0508:	mov w2, wzr
+    ffff9dde050c:	mov x3, xzr
+    ffff9dde0510:	mov x4, xzr
+    ffff9dde0514:	movz x8, #0xfcc
+    ffff9dde0518:	movk x8, #0xca6e, lsl #16
+    ffff9dde051c:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0520:	blr x8
+    ffff9dde0524:	b #.L4
+.L84:
+    ffff9dde0528:	ldr x0, [x28, #0x50]
+    ffff9dde052c:	ldr w11, [x0]
+    ffff9dde0530:	subs w11, w11, #1
+    ffff9dde0534:	str w11, [x0]
+    ffff9dde0538:	b.ne #.L5
+    ffff9dde053c:	movz x11, #0xa10
+    ffff9dde0540:	movk x11, #0x966b, lsl #16
+    ffff9dde0544:	movk x11, #0xffff, lsl #32
+    ffff9dde0548:	str x11, [x27]
+    ffff9dde054c:	movz x11, #0xe04c
+    ffff9dde0550:	movk x11, #0xca71, lsl #16
+    ffff9dde0554:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0558:	blr x11
+    ffff9dde055c:	b #.L5
+.L85:
+    ffff9dde0560:	mov x0, x28
+    ffff9dde0564:	bl #zend_jit_free_call_frame
+    ffff9dde0568:	b #.L6
+.L86:
+    ffff9dde056c:	movz x28, #0xa30
+    ffff9dde0570:	movk x28, #0x966b, lsl #16
+    ffff9dde0574:	movk x28, #0xffff, lsl #32
+    ffff9dde0578:	str x28, [x27]
+    ffff9dde057c:	b #JIT$$interrupt_handler
+.L87:
+    ffff9dde0580:	movz w0, #0x60
+    ffff9dde0584:	movz x8, #0xa30
+    ffff9dde0588:	movk x8, #0x966b, lsl #16
+    ffff9dde058c:	movk x8, #0xffff, lsl #32
+    ffff9dde0590:	str x8, [x27]
+    ffff9dde0594:	bl #zend_jit_int_extend_stack_helper
+    ffff9dde0598:	mov x28, x0
+    ffff9dde059c:	b #.L7
+.L88:
+    ffff9dde05a0:	movz x0, #0x618
+    ffff9dde05a4:	movk x0, #0x966b, lsl #16
+    ffff9dde05a8:	movk x0, #0xffff, lsl #32
+    ffff9dde05ac:	bl #zend_jit_init_func_run_time_cache_helper
+    ffff9dde05b0:	ldr x9, [x27, #0x40]
+    ffff9dde05b4:	mov x8, x0
+    ffff9dde05b8:	str x8, [x9, #0x10]
+    ffff9dde05bc:	b #.L8
+.L89:
+    ffff9dde05c0:	movz w0, #0x80
+    ffff9dde05c4:	mov x1, x8
+    ffff9dde05c8:	movz x8, #0xa50
+    ffff9dde05cc:	movk x8, #0x966b, lsl #16
+    ffff9dde05d0:	movk x8, #0xffff, lsl #32
+    ffff9dde05d4:	str x8, [x27]
+    ffff9dde05d8:	bl #zend_jit_extend_stack_helper
+    ffff9dde05dc:	mov x28, x0
+    ffff9dde05e0:	b #.L9
+.L90:
+    ffff9dde05e4:	movz x8, #0xad0
+    ffff9dde05e8:	movk x8, #0x966b, lsl #16
+    ffff9dde05ec:	movk x8, #0xffff, lsl #32
+    ffff9dde05f0:	str x8, [x27]
+    ffff9dde05f4:	movz w0, #0x60
+    ffff9dde05f8:	bl #zend_jit_undefined_op_helper
+    ffff9dde05fc:	movz w11, #0x1
+    ffff9dde0600:	str w11, [x28, #0x58]
+    ffff9dde0604:	cbz x0, #JIT$$exception_handler
+    ffff9dde0608:	b #.L10
+.L91:
+    ffff9dde060c:	ldr x0, [x27, #0x60]
+    ffff9dde0610:	ldr x10, [x0, #8]
+    ffff9dde0614:	str x10, [x28, #0x50]
+    ffff9dde0618:	ldr w8, [x0, #0x10]
+    ffff9dde061c:	str w8, [x28, #0x58]
+    ffff9dde0620:	ldr w11, [x0]
+    ffff9dde0624:	subs w11, w11, #1
+    ffff9dde0628:	str w11, [x0]
+    ffff9dde062c:	b.eq #.L92
+    ffff9dde0630:	tst w8, #0x100
+    ffff9dde0634:	b.eq #.L10
+    ffff9dde0638:	ldr w11, [x10]
+    ffff9dde063c:	add w11, w11, #1
+    ffff9dde0640:	str w11, [x10]
+    ffff9dde0644:	b #.L10
+.L92:
+    ffff9dde0648:	mov x1, xzr
+    ffff9dde064c:	mov w2, wzr
+    ffff9dde0650:	mov x3, xzr
+    ffff9dde0654:	mov x4, xzr
+    ffff9dde0658:	movz x8, #0xfcc
+    ffff9dde065c:	movk x8, #0xca6e, lsl #16
+    ffff9dde0660:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0664:	blr x8
+    ffff9dde0668:	b #.L10
+.L93:
+    ffff9dde066c:	ldr x0, [x28, #0x50]
+    ffff9dde0670:	ldr w11, [x0]
+    ffff9dde0674:	subs w11, w11, #1
+    ffff9dde0678:	str w11, [x0]
+    ffff9dde067c:	b.ne #.L11
+    ffff9dde0680:	movz x11, #0xaf0
+    ffff9dde0684:	movk x11, #0x966b, lsl #16
+    ffff9dde0688:	movk x11, #0xffff, lsl #32
+    ffff9dde068c:	str x11, [x27]
+    ffff9dde0690:	movz x11, #0xe04c
+    ffff9dde0694:	movk x11, #0xca71, lsl #16
+    ffff9dde0698:	movk x11, #0xaaaa, lsl #32
+    ffff9dde069c:	blr x11
+    ffff9dde06a0:	b #.L11
+.L94:
+    ffff9dde06a4:	mov x0, x28
+    ffff9dde06a8:	bl #zend_jit_free_call_frame
+    ffff9dde06ac:	b #.L12
+.L95:
+    ffff9dde06b0:	movz x28, #0xb10
+    ffff9dde06b4:	movk x28, #0x966b, lsl #16
+    ffff9dde06b8:	movk x28, #0xffff, lsl #32
+    ffff9dde06bc:	str x28, [x27]
+    ffff9dde06c0:	b #JIT$$interrupt_handler
+.L96:
+    ffff9dde06c4:	movz w0, #0x60
+    ffff9dde06c8:	movz x8, #0xb10
+    ffff9dde06cc:	movk x8, #0x966b, lsl #16
+    ffff9dde06d0:	movk x8, #0xffff, lsl #32
+    ffff9dde06d4:	str x8, [x27]
+    ffff9dde06d8:	bl #zend_jit_int_extend_stack_helper
+    ffff9dde06dc:	mov x28, x0
+    ffff9dde06e0:	b #.L13
+.L97:
+    ffff9dde06e4:	movz x0, #0x618
+    ffff9dde06e8:	movk x0, #0x966b, lsl #16
+    ffff9dde06ec:	movk x0, #0xffff, lsl #32
+    ffff9dde06f0:	bl #zend_jit_init_func_run_time_cache_helper
+    ffff9dde06f4:	ldr x9, [x27, #0x40]
+    ffff9dde06f8:	mov x8, x0
+    ffff9dde06fc:	str x8, [x9, #0x10]
+    ffff9dde0700:	b #.L14
+.L98:
+    ffff9dde0704:	movz w0, #0x80
+    ffff9dde0708:	mov x1, x8
+    ffff9dde070c:	movz x8, #0xb30
+    ffff9dde0710:	movk x8, #0x966b, lsl #16
+    ffff9dde0714:	movk x8, #0xffff, lsl #32
+    ffff9dde0718:	str x8, [x27]
+    ffff9dde071c:	bl #zend_jit_extend_stack_helper
+    ffff9dde0720:	mov x28, x0
+    ffff9dde0724:	b #.L15
+.L99:
+    ffff9dde0728:	movz x8, #0xbb0
+    ffff9dde072c:	movk x8, #0x966b, lsl #16
+    ffff9dde0730:	movk x8, #0xffff, lsl #32
+    ffff9dde0734:	str x8, [x27]
+    ffff9dde0738:	movz w0, #0x60
+    ffff9dde073c:	bl #zend_jit_undefined_op_helper
+    ffff9dde0740:	movz w11, #0x1
+    ffff9dde0744:	str w11, [x28, #0x58]
+    ffff9dde0748:	cbz x0, #JIT$$exception_handler
+    ffff9dde074c:	b #.L16
+.L100:
+    ffff9dde0750:	ldr x0, [x27, #0x60]
+    ffff9dde0754:	ldr x10, [x0, #8]
+    ffff9dde0758:	str x10, [x28, #0x50]
+    ffff9dde075c:	ldr w8, [x0, #0x10]
+    ffff9dde0760:	str w8, [x28, #0x58]
+    ffff9dde0764:	ldr w11, [x0]
+    ffff9dde0768:	subs w11, w11, #1
+    ffff9dde076c:	str w11, [x0]
+    ffff9dde0770:	b.eq #.L101
+    ffff9dde0774:	tst w8, #0x100
+    ffff9dde0778:	b.eq #.L16
+    ffff9dde077c:	ldr w11, [x10]
+    ffff9dde0780:	add w11, w11, #1
+    ffff9dde0784:	str w11, [x10]
+    ffff9dde0788:	b #.L16
+.L101:
+    ffff9dde078c:	mov x1, xzr
+    ffff9dde0790:	mov w2, wzr
+    ffff9dde0794:	mov x3, xzr
+    ffff9dde0798:	mov x4, xzr
+    ffff9dde079c:	movz x8, #0xfcc
+    ffff9dde07a0:	movk x8, #0xca6e, lsl #16
+    ffff9dde07a4:	movk x8, #0xaaaa, lsl #32
+    ffff9dde07a8:	blr x8
+    ffff9dde07ac:	b #.L16
+.L102:
+    ffff9dde07b0:	ldr x0, [x28, #0x50]
+    ffff9dde07b4:	ldr w11, [x0]
+    ffff9dde07b8:	subs w11, w11, #1
+    ffff9dde07bc:	str w11, [x0]
+    ffff9dde07c0:	b.ne #.L17
+    ffff9dde07c4:	movz x11, #0xbd0
+    ffff9dde07c8:	movk x11, #0x966b, lsl #16
+    ffff9dde07cc:	movk x11, #0xffff, lsl #32
+    ffff9dde07d0:	str x11, [x27]
+    ffff9dde07d4:	movz x11, #0xe04c
+    ffff9dde07d8:	movk x11, #0xca71, lsl #16
+    ffff9dde07dc:	movk x11, #0xaaaa, lsl #32
+    ffff9dde07e0:	blr x11
+    ffff9dde07e4:	b #.L17
+.L103:
+    ffff9dde07e8:	mov x0, x28
+    ffff9dde07ec:	bl #zend_jit_free_call_frame
+    ffff9dde07f0:	b #.L18
+.L104:
+    ffff9dde07f4:	movz x28, #0xbf0
+    ffff9dde07f8:	movk x28, #0x966b, lsl #16
+    ffff9dde07fc:	movk x28, #0xffff, lsl #32
+    ffff9dde0800:	str x28, [x27]
+    ffff9dde0804:	b #JIT$$interrupt_handler
+.L105:
+    ffff9dde0808:	movz w0, #0x60
+    ffff9dde080c:	movz x8, #0xbf0
+    ffff9dde0810:	movk x8, #0x966b, lsl #16
+    ffff9dde0814:	movk x8, #0xffff, lsl #32
+    ffff9dde0818:	str x8, [x27]
+    ffff9dde081c:	bl #zend_jit_int_extend_stack_helper
+    ffff9dde0820:	mov x28, x0
+    ffff9dde0824:	b #.L19
+.L106:
+    ffff9dde0828:	movz x0, #0x618
+    ffff9dde082c:	movk x0, #0x966b, lsl #16
+    ffff9dde0830:	movk x0, #0xffff, lsl #32
+    ffff9dde0834:	bl #zend_jit_init_func_run_time_cache_helper
+    ffff9dde0838:	ldr x9, [x27, #0x40]
+    ffff9dde083c:	mov x8, x0
+    ffff9dde0840:	str x8, [x9, #0x10]
+    ffff9dde0844:	b #.L20
+.L107:
+    ffff9dde0848:	movz w0, #0x80
+    ffff9dde084c:	mov x1, x8
+    ffff9dde0850:	movz x8, #0xc10
+    ffff9dde0854:	movk x8, #0x966b, lsl #16
+    ffff9dde0858:	movk x8, #0xffff, lsl #32
+    ffff9dde085c:	str x8, [x27]
+    ffff9dde0860:	bl #zend_jit_extend_stack_helper
+    ffff9dde0864:	mov x28, x0
+    ffff9dde0868:	b #.L21
+.L108:
+    ffff9dde086c:	movz x8, #0xc90
+    ffff9dde0870:	movk x8, #0x966b, lsl #16
+    ffff9dde0874:	movk x8, #0xffff, lsl #32
+    ffff9dde0878:	str x8, [x27]
+    ffff9dde087c:	movz w0, #0x60
+    ffff9dde0880:	bl #zend_jit_undefined_op_helper
+    ffff9dde0884:	movz w11, #0x1
+    ffff9dde0888:	str w11, [x28, #0x58]
+    ffff9dde088c:	cbz x0, #JIT$$exception_handler
+    ffff9dde0890:	b #.L22
+.L109:
+    ffff9dde0894:	ldr x0, [x27, #0x60]
+    ffff9dde0898:	ldr x10, [x0, #8]
+    ffff9dde089c:	str x10, [x28, #0x50]
+    ffff9dde08a0:	ldr w8, [x0, #0x10]
+    ffff9dde08a4:	str w8, [x28, #0x58]
+    ffff9dde08a8:	ldr w11, [x0]
+    ffff9dde08ac:	subs w11, w11, #1
+    ffff9dde08b0:	str w11, [x0]
+    ffff9dde08b4:	b.eq #.L110
+    ffff9dde08b8:	tst w8, #0x100
+    ffff9dde08bc:	b.eq #.L22
+    ffff9dde08c0:	ldr w11, [x10]
+    ffff9dde08c4:	add w11, w11, #1
+    ffff9dde08c8:	str w11, [x10]
+    ffff9dde08cc:	b #.L22
+.L110:
+    ffff9dde08d0:	mov x1, xzr
+    ffff9dde08d4:	mov w2, wzr
+    ffff9dde08d8:	mov x3, xzr
+    ffff9dde08dc:	mov x4, xzr
+    ffff9dde08e0:	movz x8, #0xfcc
+    ffff9dde08e4:	movk x8, #0xca6e, lsl #16
+    ffff9dde08e8:	movk x8, #0xaaaa, lsl #32
+    ffff9dde08ec:	blr x8
+    ffff9dde08f0:	b #.L22
+.L111:
+    ffff9dde08f4:	ldr x0, [x28, #0x50]
+    ffff9dde08f8:	ldr w11, [x0]
+    ffff9dde08fc:	subs w11, w11, #1
+    ffff9dde0900:	str w11, [x0]
+    ffff9dde0904:	b.ne #.L23
+    ffff9dde0908:	movz x11, #0xcb0
+    ffff9dde090c:	movk x11, #0x966b, lsl #16
+    ffff9dde0910:	movk x11, #0xffff, lsl #32
+    ffff9dde0914:	str x11, [x27]
+    ffff9dde0918:	movz x11, #0xe04c
+    ffff9dde091c:	movk x11, #0xca71, lsl #16
+    ffff9dde0920:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0924:	blr x11
+    ffff9dde0928:	b #.L23
+.L112:
+    ffff9dde092c:	mov x0, x28
+    ffff9dde0930:	bl #zend_jit_free_call_frame
+    ffff9dde0934:	b #.L24
+.L113:
+    ffff9dde0938:	movz x28, #0xcd0
+    ffff9dde093c:	movk x28, #0x966b, lsl #16
+    ffff9dde0940:	movk x28, #0xffff, lsl #32
+    ffff9dde0944:	str x28, [x27]
+    ffff9dde0948:	b #JIT$$interrupt_handler
+.L114:
+    ffff9dde094c:	movz w0, #0x60
+    ffff9dde0950:	movz x8, #0xcd0
+    ffff9dde0954:	movk x8, #0x966b, lsl #16
+    ffff9dde0958:	movk x8, #0xffff, lsl #32
+    ffff9dde095c:	str x8, [x27]
+    ffff9dde0960:	bl #zend_jit_int_extend_stack_helper
+    ffff9dde0964:	mov x28, x0
+    ffff9dde0968:	b #.L25
+.L115:
+    ffff9dde096c:	movz x0, #0x618
+    ffff9dde0970:	movk x0, #0x966b, lsl #16
+    ffff9dde0974:	movk x0, #0xffff, lsl #32
+    ffff9dde0978:	bl #zend_jit_init_func_run_time_cache_helper
+    ffff9dde097c:	ldr x9, [x27, #0x40]
+    ffff9dde0980:	mov x8, x0
+    ffff9dde0984:	str x8, [x9, #0x10]
+    ffff9dde0988:	b #.L26
+.L116:
+    ffff9dde098c:	movz w0, #0x80
+    ffff9dde0990:	mov x1, x8
+    ffff9dde0994:	movz x8, #0xcf0
+    ffff9dde0998:	movk x8, #0x966b, lsl #16
+    ffff9dde099c:	movk x8, #0xffff, lsl #32
+    ffff9dde09a0:	str x8, [x27]
+    ffff9dde09a4:	bl #zend_jit_extend_stack_helper
+    ffff9dde09a8:	mov x28, x0
+    ffff9dde09ac:	b #.L27
+.L117:
+    ffff9dde09b0:	movz x8, #0xd70
+    ffff9dde09b4:	movk x8, #0x966b, lsl #16
+    ffff9dde09b8:	movk x8, #0xffff, lsl #32
+    ffff9dde09bc:	str x8, [x27]
+    ffff9dde09c0:	movz w0, #0x60
+    ffff9dde09c4:	bl #zend_jit_undefined_op_helper
+    ffff9dde09c8:	movz w11, #0x1
+    ffff9dde09cc:	str w11, [x28, #0x58]
+    ffff9dde09d0:	cbz x0, #JIT$$exception_handler
+    ffff9dde09d4:	b #.L28
+.L118:
+    ffff9dde09d8:	ldr x0, [x27, #0x60]
+    ffff9dde09dc:	ldr x10, [x0, #8]
+    ffff9dde09e0:	str x10, [x28, #0x50]
+    ffff9dde09e4:	ldr w8, [x0, #0x10]
+    ffff9dde09e8:	str w8, [x28, #0x58]
+    ffff9dde09ec:	ldr w11, [x0]
+    ffff9dde09f0:	subs w11, w11, #1
+    ffff9dde09f4:	str w11, [x0]
+    ffff9dde09f8:	b.eq #.L119
+    ffff9dde09fc:	tst w8, #0x100
+    ffff9dde0a00:	b.eq #.L28
+    ffff9dde0a04:	ldr w11, [x10]
+    ffff9dde0a08:	add w11, w11, #1
+    ffff9dde0a0c:	str w11, [x10]
+    ffff9dde0a10:	b #.L28
+.L119:
+    ffff9dde0a14:	mov x1, xzr
+    ffff9dde0a18:	mov w2, wzr
+    ffff9dde0a1c:	mov x3, xzr
+    ffff9dde0a20:	mov x4, xzr
+    ffff9dde0a24:	movz x8, #0xfcc
+    ffff9dde0a28:	movk x8, #0xca6e, lsl #16
+    ffff9dde0a2c:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0a30:	blr x8
+    ffff9dde0a34:	b #.L28
+.L120:
+    ffff9dde0a38:	ldr x0, [x28, #0x50]
+    ffff9dde0a3c:	ldr w11, [x0]
+    ffff9dde0a40:	subs w11, w11, #1
+    ffff9dde0a44:	str w11, [x0]
+    ffff9dde0a48:	b.ne #.L29
+    ffff9dde0a4c:	movz x11, #0xd90
+    ffff9dde0a50:	movk x11, #0x966b, lsl #16
+    ffff9dde0a54:	movk x11, #0xffff, lsl #32
+    ffff9dde0a58:	str x11, [x27]
+    ffff9dde0a5c:	movz x11, #0xe04c
+    ffff9dde0a60:	movk x11, #0xca71, lsl #16
+    ffff9dde0a64:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0a68:	blr x11
+    ffff9dde0a6c:	b #.L29
+.L121:
+    ffff9dde0a70:	mov x0, x28
+    ffff9dde0a74:	bl #zend_jit_free_call_frame
+    ffff9dde0a78:	b #.L30
+.L122:
+    ffff9dde0a7c:	movz x28, #0xdb0
+    ffff9dde0a80:	movk x28, #0x966b, lsl #16
+    ffff9dde0a84:	movk x28, #0xffff, lsl #32
+    ffff9dde0a88:	str x28, [x27]
+    ffff9dde0a8c:	b #JIT$$interrupt_handler
+.L123:
+    ffff9dde0a90:	movz w0, #0x60
+    ffff9dde0a94:	movz x8, #0xdb0
+    ffff9dde0a98:	movk x8, #0x966b, lsl #16
+    ffff9dde0a9c:	movk x8, #0xffff, lsl #32
+    ffff9dde0aa0:	str x8, [x27]
+    ffff9dde0aa4:	bl #zend_jit_int_extend_stack_helper
+    ffff9dde0aa8:	mov x28, x0
+    ffff9dde0aac:	b #.L31
+.L124:
+    ffff9dde0ab0:	movz x0, #0x618
+    ffff9dde0ab4:	movk x0, #0x966b, lsl #16
+    ffff9dde0ab8:	movk x0, #0xffff, lsl #32
+    ffff9dde0abc:	bl #zend_jit_init_func_run_time_cache_helper
+    ffff9dde0ac0:	ldr x9, [x27, #0x40]
+    ffff9dde0ac4:	mov x8, x0
+    ffff9dde0ac8:	str x8, [x9, #0x10]
+    ffff9dde0acc:	b #.L32
+.L125:
+    ffff9dde0ad0:	movz w0, #0x80
+    ffff9dde0ad4:	mov x1, x8
+    ffff9dde0ad8:	movz x8, #0xdd0
+    ffff9dde0adc:	movk x8, #0x966b, lsl #16
+    ffff9dde0ae0:	movk x8, #0xffff, lsl #32
+    ffff9dde0ae4:	str x8, [x27]
+    ffff9dde0ae8:	bl #zend_jit_extend_stack_helper
+    ffff9dde0aec:	mov x28, x0
+    ffff9dde0af0:	b #.L33
+.L126:
+    ffff9dde0af4:	movz x8, #0xe50
+    ffff9dde0af8:	movk x8, #0x966b, lsl #16
+    ffff9dde0afc:	movk x8, #0xffff, lsl #32
+    ffff9dde0b00:	str x8, [x27]
+    ffff9dde0b04:	movz w0, #0x60
+    ffff9dde0b08:	bl #zend_jit_undefined_op_helper
+    ffff9dde0b0c:	movz w11, #0x1
+    ffff9dde0b10:	str w11, [x28, #0x58]
+    ffff9dde0b14:	cbz x0, #JIT$$exception_handler
+    ffff9dde0b18:	b #.L34
+.L127:
+    ffff9dde0b1c:	ldr x0, [x27, #0x60]
+    ffff9dde0b20:	ldr x10, [x0, #8]
+    ffff9dde0b24:	str x10, [x28, #0x50]
+    ffff9dde0b28:	ldr w8, [x0, #0x10]
+    ffff9dde0b2c:	str w8, [x28, #0x58]
+    ffff9dde0b30:	ldr w11, [x0]
+    ffff9dde0b34:	subs w11, w11, #1
+    ffff9dde0b38:	str w11, [x0]
+    ffff9dde0b3c:	b.eq #.L128
+    ffff9dde0b40:	tst w8, #0x100
+    ffff9dde0b44:	b.eq #.L34
+    ffff9dde0b48:	ldr w11, [x10]
+    ffff9dde0b4c:	add w11, w11, #1
+    ffff9dde0b50:	str w11, [x10]
+    ffff9dde0b54:	b #.L34
+.L128:
+    ffff9dde0b58:	mov x1, xzr
+    ffff9dde0b5c:	mov w2, wzr
+    ffff9dde0b60:	mov x3, xzr
+    ffff9dde0b64:	mov x4, xzr
+    ffff9dde0b68:	movz x8, #0xfcc
+    ffff9dde0b6c:	movk x8, #0xca6e, lsl #16
+    ffff9dde0b70:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0b74:	blr x8
+    ffff9dde0b78:	b #.L34
+.L129:
+    ffff9dde0b7c:	ldr x0, [x28, #0x50]
+    ffff9dde0b80:	ldr w11, [x0]
+    ffff9dde0b84:	subs w11, w11, #1
+    ffff9dde0b88:	str w11, [x0]
+    ffff9dde0b8c:	b.ne #.L35
+    ffff9dde0b90:	movz x11, #0xe70
+    ffff9dde0b94:	movk x11, #0x966b, lsl #16
+    ffff9dde0b98:	movk x11, #0xffff, lsl #32
+    ffff9dde0b9c:	str x11, [x27]
+    ffff9dde0ba0:	movz x11, #0xe04c
+    ffff9dde0ba4:	movk x11, #0xca71, lsl #16
+    ffff9dde0ba8:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0bac:	blr x11
+    ffff9dde0bb0:	b #.L35
+.L130:
+    ffff9dde0bb4:	mov x0, x28
+    ffff9dde0bb8:	bl #zend_jit_free_call_frame
+    ffff9dde0bbc:	b #.L36
+.L131:
+    ffff9dde0bc0:	movz x28, #0xe90
+    ffff9dde0bc4:	movk x28, #0x966b, lsl #16
+    ffff9dde0bc8:	movk x28, #0xffff, lsl #32
+    ffff9dde0bcc:	str x28, [x27]
+    ffff9dde0bd0:	b #JIT$$interrupt_handler
+.L132:
+    ffff9dde0bd4:	movz w0, #0x60
+    ffff9dde0bd8:	movz x8, #0xe90
+    ffff9dde0bdc:	movk x8, #0x966b, lsl #16
+    ffff9dde0be0:	movk x8, #0xffff, lsl #32
+    ffff9dde0be4:	str x8, [x27]
+    ffff9dde0be8:	bl #zend_jit_int_extend_stack_helper
+    ffff9dde0bec:	mov x28, x0
+    ffff9dde0bf0:	b #.L37
+.L133:
+    ffff9dde0bf4:	movz x0, #0x618
+    ffff9dde0bf8:	movk x0, #0x966b, lsl #16
+    ffff9dde0bfc:	movk x0, #0xffff, lsl #32
+    ffff9dde0c00:	bl #zend_jit_init_func_run_time_cache_helper
+    ffff9dde0c04:	ldr x9, [x27, #0x40]
+    ffff9dde0c08:	mov x8, x0
+    ffff9dde0c0c:	str x8, [x9, #0x10]
+    ffff9dde0c10:	b #.L38
+.L134:
+    ffff9dde0c14:	movz w0, #0x80
+    ffff9dde0c18:	mov x1, x8
+    ffff9dde0c1c:	movz x8, #0xeb0
+    ffff9dde0c20:	movk x8, #0x966b, lsl #16
+    ffff9dde0c24:	movk x8, #0xffff, lsl #32
+    ffff9dde0c28:	str x8, [x27]
+    ffff9dde0c2c:	bl #zend_jit_extend_stack_helper
+    ffff9dde0c30:	mov x28, x0
+    ffff9dde0c34:	b #.L39
+.L135:
+    ffff9dde0c38:	movz x8, #0xf30
+    ffff9dde0c3c:	movk x8, #0x966b, lsl #16
+    ffff9dde0c40:	movk x8, #0xffff, lsl #32
+    ffff9dde0c44:	str x8, [x27]
+    ffff9dde0c48:	movz w0, #0x60
+    ffff9dde0c4c:	bl #zend_jit_undefined_op_helper
+    ffff9dde0c50:	movz w11, #0x1
+    ffff9dde0c54:	str w11, [x28, #0x58]
+    ffff9dde0c58:	cbz x0, #JIT$$exception_handler
+    ffff9dde0c5c:	b #.L40
+.L136:
+    ffff9dde0c60:	ldr x0, [x27, #0x60]
+    ffff9dde0c64:	ldr x10, [x0, #8]
+    ffff9dde0c68:	str x10, [x28, #0x50]
+    ffff9dde0c6c:	ldr w8, [x0, #0x10]
+    ffff9dde0c70:	str w8, [x28, #0x58]
+    ffff9dde0c74:	ldr w11, [x0]
+    ffff9dde0c78:	subs w11, w11, #1
+    ffff9dde0c7c:	str w11, [x0]
+    ffff9dde0c80:	b.eq #.L137
+    ffff9dde0c84:	tst w8, #0x100
+    ffff9dde0c88:	b.eq #.L40
+    ffff9dde0c8c:	ldr w11, [x10]
+    ffff9dde0c90:	add w11, w11, #1
+    ffff9dde0c94:	str w11, [x10]
+    ffff9dde0c98:	b #.L40
+.L137:
+    ffff9dde0c9c:	mov x1, xzr
+    ffff9dde0ca0:	mov w2, wzr
+    ffff9dde0ca4:	mov x3, xzr
+    ffff9dde0ca8:	mov x4, xzr
+    ffff9dde0cac:	movz x8, #0xfcc
+    ffff9dde0cb0:	movk x8, #0xca6e, lsl #16
+    ffff9dde0cb4:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0cb8:	blr x8
+    ffff9dde0cbc:	b #.L40
+.L138:
+    ffff9dde0cc0:	ldr x0, [x28, #0x50]
+    ffff9dde0cc4:	ldr w11, [x0]
+    ffff9dde0cc8:	subs w11, w11, #1
+    ffff9dde0ccc:	str w11, [x0]
+    ffff9dde0cd0:	b.ne #.L41
+    ffff9dde0cd4:	movz x11, #0xf50
+    ffff9dde0cd8:	movk x11, #0x966b, lsl #16
+    ffff9dde0cdc:	movk x11, #0xffff, lsl #32
+    ffff9dde0ce0:	str x11, [x27]
+    ffff9dde0ce4:	movz x11, #0xe04c
+    ffff9dde0ce8:	movk x11, #0xca71, lsl #16
+    ffff9dde0cec:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0cf0:	blr x11
+    ffff9dde0cf4:	b #.L41
+.L139:
+    ffff9dde0cf8:	mov x0, x28
+    ffff9dde0cfc:	bl #zend_jit_free_call_frame
+    ffff9dde0d00:	b #.L42
+.L140:
+    ffff9dde0d04:	movz x28, #0xf70
+    ffff9dde0d08:	movk x28, #0x966b, lsl #16
+    ffff9dde0d0c:	movk x28, #0xffff, lsl #32
+    ffff9dde0d10:	str x28, [x27]
+    ffff9dde0d14:	b #JIT$$interrupt_handler
+.L141:
+    ffff9dde0d18:	movz x8, #0xfb0
+    ffff9dde0d1c:	movk x8, #0x966b, lsl #16
+    ffff9dde0d20:	movk x8, #0xffff, lsl #32
+    ffff9dde0d24:	str x8, [x27]
+    ffff9dde0d28:	bl #zend_jit_invalid_method_call
+    ffff9dde0d2c:	b #JIT$$exception_handler
+.L142:
+    ffff9dde0d30:	movz x1, #0x8d0
+    ffff9dde0d34:	movk x1, #0x966b, lsl #16
+    ffff9dde0d38:	movk x1, #0xffff, lsl #32
+    ffff9dde0d3c:	add x2, sp, #0x10
+    ffff9dde0d40:	movz x8, #0xfb0
+    ffff9dde0d44:	movk x8, #0x966b, lsl #16
+    ffff9dde0d48:	movk x8, #0xffff, lsl #32
+    ffff9dde0d4c:	str x8, [x27]
+    ffff9dde0d50:	bl #zend_jit_find_method_helper
+    ffff9dde0d54:	mov x8, x0
+    ffff9dde0d58:	cbnz x8, #.L44
+    ffff9dde0d5c:	b #JIT$$exception_handler
+.L143:
+    ffff9dde0d60:	ldr x0, [sp, #0x10]
+    ffff9dde0d64:	mov x1, x8
+    ffff9dde0d68:	movz w2, #0
+    ffff9dde0d6c:	bl #zend_jit_push_static_metod_call_frame
+    ffff9dde0d70:	mov x28, x0
+    ffff9dde0d74:	b #.L47
+.L144:
+    ffff9dde0d78:	mov x1, x8
+    ffff9dde0d7c:	movz x8, #0xfb0
+    ffff9dde0d80:	movk x8, #0x966b, lsl #16
+    ffff9dde0d84:	movk x8, #0xffff, lsl #32
+    ffff9dde0d88:	str x8, [x27]
+    ffff9dde0d8c:	bl #zend_jit_extend_stack_helper
+    ffff9dde0d90:	mov x28, x0
+    ffff9dde0d94:	b #.L46
+.L145:
+    ffff9dde0d98:	mov x0, x28
+    ffff9dde0d9c:	bl #zend_jit_deprecated_helper
+    ffff9dde0da0:	and w0, w0, #0xff
+    ffff9dde0da4:	ldr x8, [x28, #0x18]
+    ffff9dde0da8:	cbnz w0, #.L48
+    ffff9dde0dac:	b #JIT$$exception_handler
+.L146:
+    ffff9dde0db0:	mov x0, x27
+    ffff9dde0db4:	bl #zend_jit_copy_extra_args_helper
+    ffff9dde0db8:	ldr x8, [x27, #0x18]
+    ffff9dde0dbc:	ldr w9, [x27, #0x2c]
+    ffff9dde0dc0:	b #.L50
+.L147:
+    ffff9dde0dc4:	add x11, x28, #0x20
+    ffff9dde0dc8:	ldr x0, [x11]
+    ffff9dde0dcc:	ldr w11, [x0]
+    ffff9dde0dd0:	subs w11, w11, #1
+    ffff9dde0dd4:	str w11, [x0]
+    ffff9dde0dd8:	b.ne #.L148
+    ffff9dde0ddc:	movz x11, #0x8754
+    ffff9dde0de0:	movk x11, #0xca82, lsl #16
+    ffff9dde0de4:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0de8:	blr x11
+    ffff9dde0dec:	b #.L54
+.L148:
+    ffff9dde0df0:	ldr w11, [x0, #4]
+    ffff9dde0df4:	movz w12, #0xfc10
+    ffff9dde0df8:	movk w12, #0xffff, lsl #16
+    ffff9dde0dfc:	tst w11, w12
+    ffff9dde0e00:	b.ne #.L149
+    ffff9dde0e04:	movz x11, #0x459c
+    ffff9dde0e08:	movk x11, #0xca80, lsl #16
+    ffff9dde0e0c:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0e10:	blr x11
+.L149:
+    ffff9dde0e14:	b #.L54
+.L150:
+    ffff9dde0e18:	mov x0, x28
+    ffff9dde0e1c:	bl #zend_jit_free_call_frame
+    ffff9dde0e20:	b #.L55
+.L151:
+    ffff9dde0e24:	movz x28, #0xff0
+    ffff9dde0e28:	movk x28, #0x966b, lsl #16
+    ffff9dde0e2c:	movk x28, #0xffff, lsl #32
+    ffff9dde0e30:	str x28, [x27]
+    ffff9dde0e34:	b #JIT$$interrupt_handler
+.L152:
+    ffff9dde0e38:	movz w0, #0x60
+    ffff9dde0e3c:	movz x8, #0x1050
+    ffff9dde0e40:	movk x8, #0x966b, lsl #16
+    ffff9dde0e44:	movk x8, #0xffff, lsl #32
+    ffff9dde0e48:	str x8, [x27]
+    ffff9dde0e4c:	bl #zend_jit_int_extend_stack_helper
+    ffff9dde0e50:	mov x28, x0
+    ffff9dde0e54:	b #.L58
+.L153:
+    ffff9dde0e58:	movz x0, #0x618
+    ffff9dde0e5c:	movk x0, #0x966b, lsl #16
+    ffff9dde0e60:	movk x0, #0xffff, lsl #32
+    ffff9dde0e64:	bl #zend_jit_init_func_run_time_cache_helper
+    ffff9dde0e68:	ldr x9, [x27, #0x40]
+    ffff9dde0e6c:	mov x8, x0
+    ffff9dde0e70:	str x8, [x9, #0x10]
+    ffff9dde0e74:	b #.L59
+.L154:
+    ffff9dde0e78:	movz w0, #0x80
+    ffff9dde0e7c:	mov x1, x8
+    ffff9dde0e80:	movz x8, #0x1070
+    ffff9dde0e84:	movk x8, #0x966b, lsl #16
+    ffff9dde0e88:	movk x8, #0xffff, lsl #32
+    ffff9dde0e8c:	str x8, [x27]
+    ffff9dde0e90:	bl #zend_jit_extend_stack_helper
+    ffff9dde0e94:	mov x28, x0
+    ffff9dde0e98:	b #.L60
+.L155:
+    ffff9dde0e9c:	movz x8, #0x10f0
+    ffff9dde0ea0:	movk x8, #0x966b, lsl #16
+    ffff9dde0ea4:	movk x8, #0xffff, lsl #32
+    ffff9dde0ea8:	str x8, [x27]
+    ffff9dde0eac:	movz w0, #0x60
+    ffff9dde0eb0:	bl #zend_jit_undefined_op_helper
+    ffff9dde0eb4:	movz w11, #0x1
+    ffff9dde0eb8:	str w11, [x28, #0x58]
+    ffff9dde0ebc:	cbz x0, #JIT$$exception_handler
+    ffff9dde0ec0:	b #.L61
+.L156:
+    ffff9dde0ec4:	ldr x0, [x27, #0x60]
+    ffff9dde0ec8:	ldr x10, [x0, #8]
+    ffff9dde0ecc:	str x10, [x28, #0x50]
+    ffff9dde0ed0:	ldr w8, [x0, #0x10]
+    ffff9dde0ed4:	str w8, [x28, #0x58]
+    ffff9dde0ed8:	ldr w11, [x0]
+    ffff9dde0edc:	subs w11, w11, #1
+    ffff9dde0ee0:	str w11, [x0]
+    ffff9dde0ee4:	b.eq #.L157
+    ffff9dde0ee8:	tst w8, #0x100
+    ffff9dde0eec:	b.eq #.L61
+    ffff9dde0ef0:	ldr w11, [x10]
+    ffff9dde0ef4:	add w11, w11, #1
+    ffff9dde0ef8:	str w11, [x10]
+    ffff9dde0efc:	b #.L61
+.L157:
+    ffff9dde0f00:	mov x1, xzr
+    ffff9dde0f04:	mov w2, wzr
+    ffff9dde0f08:	mov x3, xzr
+    ffff9dde0f0c:	mov x4, xzr
+    ffff9dde0f10:	movz x8, #0xfcc
+    ffff9dde0f14:	movk x8, #0xca6e, lsl #16
+    ffff9dde0f18:	movk x8, #0xaaaa, lsl #32
+    ffff9dde0f1c:	blr x8
+    ffff9dde0f20:	b #.L61
+.L158:
+    ffff9dde0f24:	ldr x0, [x28, #0x50]
+    ffff9dde0f28:	ldr w11, [x0]
+    ffff9dde0f2c:	subs w11, w11, #1
+    ffff9dde0f30:	str w11, [x0]
+    ffff9dde0f34:	b.ne #.L62
+    ffff9dde0f38:	movz x11, #0x1110
+    ffff9dde0f3c:	movk x11, #0x966b, lsl #16
+    ffff9dde0f40:	movk x11, #0xffff, lsl #32
+    ffff9dde0f44:	str x11, [x27]
+    ffff9dde0f48:	movz x11, #0xe04c
+    ffff9dde0f4c:	movk x11, #0xca71, lsl #16
+    ffff9dde0f50:	movk x11, #0xaaaa, lsl #32
+    ffff9dde0f54:	blr x11
+    ffff9dde0f58:	b #.L62
+.L159:
+    ffff9dde0f5c:	mov x0, x28
+    ffff9dde0f60:	bl #zend_jit_free_call_frame
+    ffff9dde0f64:	b #.L63
+.L160:
+    ffff9dde0f68:	movz x28, #0x1130
+    ffff9dde0f6c:	movk x28, #0x966b, lsl #16
+    ffff9dde0f70:	movk x28, #0xffff, lsl #32
+    ffff9dde0f74:	str x28, [x27]
+    ffff9dde0f78:	b #JIT$$interrupt_handler
+.L161:
+    ffff9dde0f7c:	bl #zend_jit_invalid_method_call
+    ffff9dde0f80:	b #JIT$$exception_handler
+.L162:
+    ffff9dde0f84:	movz x1, #0x8d0
+    ffff9dde0f88:	movk x1, #0x966b, lsl #16
+    ffff9dde0f8c:	movk x1, #0xffff, lsl #32
+    ffff9dde0f90:	add x2, sp, #0x10
+    ffff9dde0f94:	bl #zend_jit_find_method_helper
+    ffff9dde0f98:	mov x8, x0
+    ffff9dde0f9c:	cbnz x8, #.L65
+    ffff9dde0fa0:	b #JIT$$exception_handler
+.L163:
+    ffff9dde0fa4:	ldr x0, [sp, #0x10]
+    ffff9dde0fa8:	mov x1, x8
+    ffff9dde0fac:	movz w2, #0
+    ffff9dde0fb0:	bl #zend_jit_push_static_metod_call_frame
+    ffff9dde0fb4:	mov x28, x0
+    ffff9dde0fb8:	b #.L68
+.L164:
+    ffff9dde0fbc:	mov x1, x8
+    ffff9dde0fc0:	movz x8, #0x11d0
+    ffff9dde0fc4:	movk x8, #0x966b, lsl #16
+    ffff9dde0fc8:	movk x8, #0xffff, lsl #32
+    ffff9dde0fcc:	str x8, [x27]
+    ffff9dde0fd0:	bl #zend_jit_extend_stack_helper
+    ffff9dde0fd4:	mov x28, x0
+    ffff9dde0fd8:	b #.L67
+.L165:
+    ffff9dde0fdc:	mov x0, x28
+    ffff9dde0fe0:	bl #zend_jit_deprecated_helper
+    ffff9dde0fe4:	and w0, w0, #0xff
+    ffff9dde0fe8:	ldr x8, [x28, #0x18]
+    ffff9dde0fec:	cbnz w0, #.L69
+    ffff9dde0ff0:	b #JIT$$exception_handler
+.L166:
+    ffff9dde0ff4:	mov x0, x27
+    ffff9dde0ff8:	bl #zend_jit_copy_extra_args_helper
+    ffff9dde0ffc:	ldr x8, [x27, #0x18]
+    ffff9dde1000:	ldr w9, [x27, #0x2c]
+    ffff9dde1004:	b #.L71
+.L167:
+    ffff9dde1008:	add x11, x28, #0x20
+    ffff9dde100c:	ldr x0, [x11]
+    ffff9dde1010:	ldr w11, [x0]
+    ffff9dde1014:	subs w11, w11, #1
+    ffff9dde1018:	str w11, [x0]
+    ffff9dde101c:	b.ne #.L168
+    ffff9dde1020:	movz x11, #0x8754
+    ffff9dde1024:	movk x11, #0xca82, lsl #16
+    ffff9dde1028:	movk x11, #0xaaaa, lsl #32
+    ffff9dde102c:	blr x11
+    ffff9dde1030:	b #.L75
+.L168:
+    ffff9dde1034:	ldr w11, [x0, #4]
+    ffff9dde1038:	movz w12, #0xfc10
+    ffff9dde103c:	movk w12, #0xffff, lsl #16
+    ffff9dde1040:	tst w11, w12
+    ffff9dde1044:	b.ne #.L169
+    ffff9dde1048:	movz x11, #0x459c
+    ffff9dde104c:	movk x11, #0xca80, lsl #16
+    ffff9dde1050:	movk x11, #0xaaaa, lsl #32
+    ffff9dde1054:	blr x11
+.L169:
+    ffff9dde1058:	b #.L75
+.L170:
+    ffff9dde105c:	mov x0, x28
+    ffff9dde1060:	bl #zend_jit_free_call_frame
+    ffff9dde1064:	b #.L76
+.L171:
+    ffff9dde1068:	movz x28, #0x1210
+    ffff9dde106c:	movk x28, #0x966b, lsl #16
+    ffff9dde1070:	movk x28, #0xffff, lsl #32
+    ffff9dde1074:	str x28, [x27]
+    ffff9dde1078:	b #JIT$$interrupt_handler
+
